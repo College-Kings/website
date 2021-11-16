@@ -1,8 +1,64 @@
-/* Create 8 grid rows with single column */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "Olympus Mount"
 }
 
+/* Custom fonts */
+@font-face{
+	font-family: "Olympus Mount";
+	src: url("../fonts/olympus_mount.ttf");
+}
+
+/* Styles for the first section */
+
+.container-fluid:nth-child(1){
+	height: 1080px;
+	background: url("../images/header_img.png");
+	background-size: cover;
+}
+
+.nav li:nth-child(1){
+	overflow: visible;
+	height: 100px;
+}
+
+.nav li:nth-child(2){
+	margin-left: 0;
+	width: 367px;
+	background: url("../images/patreon_background.png");
+}
+
+.nav{
+	border: 1px solid #EF8A01;
+	height: 100px;
+}
+
+.nav li:not(:nth-child(1)){
+	margin-left: 5px;
+	border-bottom: 4px solid white;
+}
+
+.nav li:nth-child(4){
+	width: 226px;
+}
+
+.nav li:not(:nth-child(1), :nth-child(2), :nth-child(4)){
+	width: 186px;
+}
+
+.nav li{
+	height: 97px;
+}
+
+.nav li a{
+	color: #EF8A01;
+	font-size: 30px;
+	line-height: 50px;
+	padding: 25px;
+	text-align: center;
+}
+
+.active{
+	color: white;
+}
