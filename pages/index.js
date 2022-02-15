@@ -45,7 +45,7 @@ const Section7 = dynamic(() => import('../components/section7'));
 
 export default function Home({ isConnected }) {
   return (
-    <div className="max-w-screen-5xl">
+    <div className="max-w-screen-6xl">
       <span id="hero"></span>
       <MainNav />
       <Hero />
