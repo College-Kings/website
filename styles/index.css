@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.shape-btn {
+  clip-path: polygon(100% 0, 100% 45%, 94% 100%, 0 100%, 0 55%, 6% 0)
+}
+
+
+/*frames*/
+.frame-background {
+  @apply flex bg-gradient-to-b from-pink-main to-orange-second p-0.5 rounded-lg rounded-tl-3xl rounded-br-3xl
+}
+
+.frame-wrapper {
+  @apply relative w-full h-full bg-black-main rounded-lg rounded-tl-3xl rounded-br-3xl
+}
+
+.frame-imgs {
+  @apply rounded-lg rounded-tl-3xl rounded-br-3xl z-0 opacity-50
+}
+
+.frame-title {
+  @apply absolute uppercase text-pink-main text-lg m:text-cardTitle font-bold
+}
+
+.frame-content {
+  @apply absolute text-white font-montserrat text-sm 2xl:text-cardContent
+}
+
+.frame-sub {
+  @apply absolute text-white text-lg m:text-cardSubtitle font-bold
+}
+
+/*card*/
+
+
+.card-img-wrapper {
+  @apply relative w-full h-full flex flex-col justify-center items-center
+}
+
+
+.card-title {
+  @apply absolute uppercase text-white font-montserrat 2xl:text-frameTitle m:text-base font-semibold top-68.75 m:top-60.75 2xl:top-74 5xl:top-108.75
+}
+
+.card-txt {
+  @apply absolute uppercase text-orange-main font-montserrat 2xl:text-frameTitle m:text-base font-bold top-74 m:top-66.142 2xl:top-80 5xl:top-114.25
+}
+
+.card-btn-wrapper {
+  @apply absolute top-87.5 2xl:top-88 m:top-75.5 5xl:top-131.5
+}
+
+
+
+/*sub*/
+
+.sub-txt {
+  @apply text-orange-main text-steamParagraph uppercase font-bebas
+  
+}
+
+.sub-txt-white {
+  @apply text-white text-steam uppercase mr-3.09 font-bebas
+
+}
+
+/* modes */
+
+.game-modes {
+  @apply uppercase text-orange-main font-bold 
+}
