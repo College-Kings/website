@@ -9,6 +9,9 @@
   clip-path: polygon(100% 0, 100% 45%, 94% 100%, 0 100%, 0 55%, 6% 0)
 }
 
+.nav-shape {
+  clip-path: polygon(0 0, 100% 0, 90% 99%, 10% 100%);
+}
 
 /*frames*/
 .frame-background {

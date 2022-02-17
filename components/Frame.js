@@ -18,6 +18,8 @@ const frames = [
     link: 'https://discord.gg/collegekings',
   },
   {
+    width: 208.15,
+    height: 39.81,
     img: second,
     alt: 'girl-second',
     title: 'merch',
@@ -26,6 +28,8 @@ const frames = [
     link: 'https://merch.collegekingsgame.com/',
   },
   {
+    width: 208.15,
+    height: 39.81,
     img: third,
     alt: 'girl-third',
     title: 'merch',

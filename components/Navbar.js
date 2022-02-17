@@ -9,16 +9,14 @@ export default function Navbar() {
   const [showSupport, setShowSupport] = useState(false);
 
   return (
-    <div
-      className={`w-full h-20 lg:h-25 absolute bg-black-main trasition ease-in-out duration-500
-      }`}
-    >
+    <div className="w-full h-20 lg:h-25 absolute bg-black-secondary">
       <div className="w-full absolute h-full">
         <Image
           src={'/assets/nav.webp'}
           className="object-cover bg-no-repeat  h-full"
           alt="nav"
-          layout='fill'
+          layout="fill"
+          priority={true}
         />
       </div>
 
@@ -35,7 +33,7 @@ export default function Navbar() {
           className="z-100"
         />
       </div>
-      <div className="absolute h-15 lg:h-20 left-36 lg:left-56 xl:ml-100 lg:w-full xl:left-80">
+      <div className="absolute h-15 lg:h-20 left-36 lg:left-56 xl:ml-100 xl:left-80">
         <div className="h-full flex justify-start align-middle z-50 overflow-hidden">
           <div className="group">
             <div className="h-full w-25 mr-1 flex justify-center align-middle items-center border-b-4 border-orange-main  group-hover:border-white m:w-32.5 xl:w-32.5 x:w-46.25 5xl:w-70 group-hover:bg-gradient-to-b from-orange-main to-orange-second">
@@ -51,17 +49,19 @@ export default function Navbar() {
           </div>
           <div className="group">
             <div className="h-full mr-1  w-25 flex justify-center align-middle items-center border-b-4 border-orange-main group-hover:border-white xl:w-32.5 x:w-32.5 5xl:w-46.25  cursor-pointer group-hover:bg-gradient-to-b from-orange-main to-orange-second">
-              <a className="2xl:text-nav uppercase text-orange-main group-hover:text-white">
-                home
-              </a>
+              <SmoothScroll href="#hero">
+                <span className="2xl:text-nav uppercase text-orange-main group-hover:text-white">
+                  home
+                </span>
+              </SmoothScroll>
             </div>
           </div>
           <div className="group">
             <div className="h-full mr-1  w-25 flex justify-center align-middle items-center border-b-4 border-orange-main group-hover:border-white m:w-32.5 xl:w-32.5 x:w-46.25 5xl:w-70 cursor-pointer group-hover:bg-gradient-to-b from-orange-main to-orange-second">
               <SmoothScroll href="#act">
-                <a className="2xl:text-nav uppercase text-orange-main group-hover:text-white pr-2">
+                <span className="2xl:text-nav uppercase text-orange-main group-hover:text-white pr-2">
                   download
-                </a>
+                </span>
               </SmoothScroll>
             </div>
           </div>

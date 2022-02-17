@@ -41,7 +41,7 @@ export default function SmoothScroll({
       onClick={handleClick}
         onKeyDown={handleClick}
     >
-      <a
+      <span
         tabIndex={0}
         target={target}
         role="link"
@@ -50,7 +50,7 @@ export default function SmoothScroll({
         {...anchorProps}
       >
         {children}
-      </a>
+      </span>
     </NextLink>
   );
 }

@@ -3,11 +3,11 @@ import React from 'react';
 
 export default function Privacy() {
   return (
-    <div className="bg-black-secondary flex flex-col px-5">
-      <h2 className="text-white font-montserrat font-bold py-5 text-xl">
+    <div className="bg-black-secondary flex flex-col  font-montserrat px-5">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         Privacy Policy
-      </h2>
-      <p className="text-white font-montserrat text-sm">
+      </h1>
+      <p className="py-2 text-gray-200">
         Crimsonsky LTD. built the College Kings game as a Commercial game. This
         SERVICE is provided by Crimsonsky LTD. and is intended for use as is.
         This page is used to inform visitors regarding our policies with the
@@ -21,10 +21,8 @@ export default function Privacy() {
         Conditions, which is accessible at College Kings unless otherwise
         defined in this Privacy Policy.
       </p>
-      <p className="text-white font-montserrat font-bold py-5 underline text-lg">
-        Information Collection and Use
-      </p>
-      <p className="text-white font-montserrat text-sm">
+      <p className="py-2 text-gray-200">Information Collection and Use</p>
+      <p className="py-2 text-gray-200">
         For a better experience, while using our Service, we may require you to
         provide us with certain personally identifiable information, including
         but not limited to Patreon API Login, as well as your Steam login. The
@@ -33,27 +31,35 @@ export default function Privacy() {
         collect information used to identify you.
       </p>
       <div>
-        <p className="text-white font-montserrat font-bold py-5 underline text-lg">
+        <p className="py-2 text-gray-200">
           Link to privacy policy of third party service providers used by the
           game
         </p>
-        <ul className="text-white font-montserrat">
+        <ul className="text-white">
           <li>
-            <a href="https://privacy.patreon.com/policies">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://privacy.patreon.com/policies"
+            >
               Patreon Privacy Policy
             </a>
           </li>
           <li>
-            <a href="https://store.steampowered.com/privacy_agreement/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://store.steampowered.com/privacy_agreement/"
+            >
               Steam Privacy Policy
             </a>
           </li>
         </ul>
       </div>
-      <p className="text-white font-montserrat">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         <strong>Log Data</strong>
-      </p>
-      <p className="text-white font-montserrat">
+      </h1>
+      <p className="py-2 text-gray-200">
         We want to inform you that whenever you use our Service, in a case of an
         error in the game we collect data and information (through third party
         products) on your PC called Log Data. This Log Data may include
@@ -62,10 +68,10 @@ export default function Privacy() {
         game when utilizing our Service, the time and date of your use of the
         Service, and other statistics.
       </p>
-      <p className="text-white font-montserrat">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         <strong>Cookies</strong>
-      </p>
-      <p className="text-white font-montserrat">
+      </h1>
+      <p className="py-2 text-gray-200">
         Cookies are files with a small amount of data that are commonly used as
         anonymous unique identifiers. These are sent to your browser from the
         websites that you visit and are stored on your device's internal memory.
@@ -76,10 +82,10 @@ export default function Privacy() {
         when a cookie is being sent to your device. If you choose to refuse our
         cookies, you may not be able to use some portions of this Service.
       </p>
-      <p className="text-white font-montserrat">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         <strong>Service Providers</strong>
-      </p>
-      <p className="text-white font-montserrat">
+      </h1>
+      <p className="py-2 text-gray-200">
         We may employ third-party companies and individuals due to the following
         reasons:
       </p>
@@ -89,26 +95,26 @@ export default function Privacy() {
         <li>To perform Service-related services; or</li>
         <li>To assist us in analyzing how our Service is used.</li>
       </ul>
-      <p className="text-white font-montserrat">
+      <p className="py-2 text-gray-200">
         We want to inform users of this Service that these third parties have
         access to your Personal Information. The reason is to perform the tasks
         assigned to them on our behalf. However, they are obligated not to
         disclose or use the information for any other purpose.
       </p>
-      <p className="text-white font-montserrat">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         <strong>Security</strong>
-      </p>
-      <p className="text-white font-montserrat">
+      </h1>
+      <p className="py-2 text-gray-200">
         We value your trust in providing us with your Personal Information, thus
         we are striving to use commercially acceptable means of protecting it.
         But remember that no method of transmission over the internet, or method
         of electronic storage is 100% secure and reliable, and we cannot
         guarantee its absolute security.
       </p>
-      <p className="text-white font-montserrat">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         <strong>Links to Other Sites</strong>
-      </p>
-      <p className="text-white font-montserrat">
+      </h1>
+      <p className="py-2 text-gray-200">
         This Service may contain links to other sites. If you click on a
         third-party link, you will be directed to that site. Note that these
         external sites are not operated by us. Therefore, we strongly advise you
@@ -116,10 +122,10 @@ export default function Privacy() {
         and assume no responsibility for the content, privacy policies, or
         practices of any third-party sites or services.
       </p>
-      <p className="text-white font-montserrat">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         <strong>Children&rsquo;s Privacy</strong>
-      </p>
-      <p className="text-white font-montserrat">
+      </h1>
+      <p className="py-2 text-gray-200">
         These Services do not address anyone under the age of 18. We do not
         knowingly collect personally identifiable information from any minor and
         person under 18. In the case we discover that a person under 18 has
@@ -129,19 +135,19 @@ export default function Privacy() {
         information, please contact us so that we will be able to do the
         necessary actions.
       </p>
-      <p className="text-white font-montserrat">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         <strong>Changes to This Privacy Policy</strong>
-      </p>
-      <p className="text-white font-montserrat">
+      </h1>
+      <p className="py-2 text-gray-200">
         We may update our Privacy Policy from time to time. Thus, you are
         advised to review this page periodically for any changes. We will notify
         you of any changes by posting the new Privacy Policy on this page. These
         changes are effective immediately after they are posted on this page.
       </p>
-      <p className="text-white font-montserrat">
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         <strong>Contact Us</strong>
-      </p>
-      <p className="text-white font-montserrat">
+      </h1>
+      <p className="pt-2 pb-10 text-gray-200">
         If you have any questions or suggestions about our Privacy Policy, do
         not hesitate to contact us at collegekingsgame@gmail.com.
       </p>

@@ -144,6 +144,8 @@ module.exports = {
           secondary: '#6D1945',
           grad: '#4f1449',
           new: '#B200B6',
+
+          
         },
         orange: {
           main: '#EF8A01',
@@ -151,6 +153,7 @@ module.exports = {
         },
         pink: {
           main: '#FC56FF',
+          dark:'#280a19'
         },
         gray: {
           main: '#404E53',
@@ -243,11 +246,11 @@ module.exports = {
         154: '38.5rem', //616
       },
       backgroundImage: {
-        'hero-pattern': "url('/assets/frame2.png')",
-        'scroll-frame': "url('/assets/scroll-frame.png')",
-        'slow-orb': "url('/assets/slow-orb.webp')",
-        street: "url('/assets/street.png')",
-        nav: "url('/assets/nav-frame.png')",
+        // 'hero-pattern': "url('/assets/frame2.png')",
+        // 'scroll-frame': "url('/assets/scroll-frame.png')",
+        // 'slow-orb': "url('/assets/slow-orb.webp')",
+        // street: "url('/assets/street.png')",
+        // nav: "url('/assets/nav-frame.png')",
         crown: "url('/assets/big-crown.png')",
         btn: "url('/assets/button-background.webp')",
         btnShade: "url('/assets/button-shade.webp')",
@@ -418,7 +421,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-{
-  /* <div className="hidden m:flex w-full top-48 right-50 h-90.975 m:h-full absolute m:top-16 xl:top-20 z-50 5xl:top-22"></div> */
-}

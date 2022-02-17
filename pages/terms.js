@@ -2,15 +2,17 @@
 export default function Terms() {
   return (
     <div className="bg-black-secondary flex flex-col px-5 text-white font-montserrat ">
-      <h2 className="">1 Subject: Area of Validity</h2>
-      <p>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
+        1 Subject: Area of Validity
+      </h1>
+      <p className="py-2 text-gray-200">
         <strong>1.1</strong> The following general terms and conditions regulate
         the use of video games and other services provided by CRIMSONSKY LTD of
         71-75 Shelton Street, Covent Garden, London, UK, WC2H 9JQ&nbsp; on
         Crimsonsky LTD' websites and in video game app stores and publishing
         platforms.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>1.2 </strong>Crimsonsky LTD offers visual novel games for
         Windows, MacOS, Linux and Android and other services within the context
         of its technical and operational capabilities, with an average annual
@@ -24,7 +26,7 @@ export default function Terms() {
         beyond Crimsonsky LTD' control (force majeure, third party
         responsibility, etc.).
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>1.3 </strong>Crimsonsky LTD continuously updates, changes, and
         develops its video games and other services at its own discretion. Users
         can therefore only participate in the respective game in its respective
@@ -32,17 +34,17 @@ export default function Terms() {
         cease operating an online or mobile game or remove a specific service
         without explanation.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>1.4 </strong>Video games and other services offered by
         Crimsonsky LTD are intended solely for the purpose of entertainment. The
         use of these games or services for business or commercial purposes is
         strictly prohibited.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>1.5 </strong>Users are responsible for ensuring that their own
         software and hardware is suitable and up-to-date.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>1.6 </strong>In addition to these general terms and conditions,
         any existing rules of the respective video games shall also apply. In
         the case of an inconsistency between these general terms and conditions
@@ -54,58 +56,60 @@ export default function Terms() {
         appropriate. Users will be appropriately informed of any specific terms
         and conditions prior to use of the respective offer.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>1.7</strong> Other provisions or general terms and conditions of
         a user, which deviate from Crimsonsky LTD' general terms and conditions,
         shall only apply if Crimsonsky LTD gives prior written consent to their
         validity.
       </p>
-      <h2>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
         <strong>2 Conclusion of Contract</strong>
-      </h2>
-      <p>
-        2.1 In order to use and download the games and other services provided
-        by Crimsonsky LTD, users must pledge a minimum amount of $20 in total on
-        Patreon in order to gain the access
+      </h1>
+      <p className="py-2 text-gray-200">
+        <strong>2.1</strong> In order to use and download the games and other
+        services provided by Crimsonsky LTD, users must pledge a minimum amount
+        of $20 in total on Patreon in order to gain the access
       </p>
-      <p>
-        2.2 Only natural persons are eligible for registration. Only individual
-        persons are permitted to be authorized users (no groups, families,
-        spouses or life partners, etc.).
+      <p className="py-2 text-gray-200">
+        <strong> 2.2</strong> Only natural persons are eligible for
+        registration. Only individual persons are permitted to be authorized
+        users (no groups, families, spouses or life partners, etc.).
       </p>
-      <p>
-        2.3 Persons under 18 years of age are not permitted to download, pledge
-        or plaz our video games.
+      <p className="py-2 text-gray-200">
+        <strong> 2.3</strong> Persons under 18 years of age are not permitted to
+        download, pledge or plaz our video games.
       </p>
-      <h2>3 General User Obligations</h2>
-      <p>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
+        3 General User Obligations
+      </h1>
+      <p className="py-2 text-gray-200">
         <strong>3.1 User data </strong>
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         Users agree to immediately provide Crimsonsky LTD with any future
         changes to data entered upon registration, in particular any change to
         the email address. Users are obliged to confirm for Crimsonsky LTD the
         accuracy of their data upon request.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.2 </strong>Login data, identification, passwords
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.2.1 </strong>Users are required to maintain strict
         confidentiality regarding all login data, identification, and passwords.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.2.2 </strong>The terms "login data", "identification", and
         "passwords" include all letter and/or character and/or number sequences
         used to authenticate the user and prevent unauthorized use by third
         parties. The password should not be identical to the player name, and it
         should consist of a combination of numbers and letters.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.2.3 </strong>Users are required to protect all login data,
         identification, and passwords from third-party access.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.2.4 </strong>In the event that a user has reason to believe
         that third parties have obtained or may have obtained unauthorized login
         data, identification, or passwords, they shall inform Crimsonsky LTD
@@ -115,15 +119,15 @@ export default function Terms() {
         access to the user's account. If there is evidence of misuse of data,
         Crimsonsky LTD shall inform the user.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.2.5 </strong>Users are under no circumstances entitled to use
         the login data of another user, unless the rules of the respective
         online or mobile game or other service allow for exceptions.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.3 </strong>Use of Crimsonsky LTD' websites and website content
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.3.1 </strong>Crimsonsky LTD' websites and games include
         various content that is protected by trademarks, copyrights, or other
         means for the benefit of Crimsonsky LTD or third parties. Unless
@@ -136,14 +140,14 @@ export default function Terms() {
         Copyright information and brand names may not be changed, hidden, or
         removed.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.3.2 </strong>The term "content" includes all data, images,
         text, graphics, music, sounds, sound sequences, videos, software
         programs and codes, and other information provided by Crimsonsky LTD.
         The term "content" also includes, in particular, all services available
         for download.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.3.3 </strong>Users are obliged to abstain from any measure
         which may compromise or interrupt the proper functioning of Crimsonsky
         LTD' websites, any individual services and/or offers there, or its
@@ -153,20 +157,20 @@ export default function Terms() {
         Crimsonsky LTD' websites and content. The transfer of data or software
         that may affect the hardware or software of recipients is not permitted.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.3.4 </strong>Any use of Crimsonsky LTD' websites or video
         games for commercial purposes, especially advertising purposes, requires
         the express prior written consent of Crimsonsky LTD.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.3.6 </strong>Crimsonsky LTD' websites and game launcher
         services may not be not be used via an anonymization service that hides
         the user's true IP address.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>3.4 </strong>Use of client software ‪
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         In the case of offers which require the prior installation of a client
         software, Crimsonsky LTD grants the user an unrestricted, non-exclusive,
         non-transferable, personal, and time-limited in terms of the user
@@ -182,16 +186,16 @@ export default function Terms() {
         interoperability. Crimsonsky LTD is liable for damages to the user in
         accordance with the statutory liability provisions.
       </p>
-      <h2>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
         <strong>4 Copyrights</strong>
-      </h2>
-      <p>
+      </h1>
+      <p className="py-2 text-gray-200">
         All Content is copyrighted, and it is either owned or used with
         permission by Crimsonsky LTD. Crimsonsky LTDdisclaims any representation
         or warranty that your unauthorized use of Content will not infringe upon
         rights of third parties not owned by or affiliated with Crimsonsky LTD.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         Except as set forth in this User Agreement or in the text of this
         Website, you may not reproduce, distribute, publish, transmit, modify,
         adapt, translate, display, distribute, sell, license, publicly perform,
@@ -206,17 +210,17 @@ export default function Terms() {
         (by implication, estoppel, or otherwise) any license or right to any
         Content under any copyright or any other intellectual property right.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         Crimsonsky LTD respects the intellectual property rights of others. If
         you believe that your work has been infringed by means of an improper
         posting or distribution of it via this Website, then please see the
         paragraph below entitled Procedure for Alleging Copyright Infringement.
       </p>
-      <h2>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
         5 Specific conditions for the use of communication facilities
         (particularly discussion forums, messaging apps, chats, comments)
-      </h2>
-      <p>
+      </h1>
+      <p className="py-2 text-gray-200">
         <strong>5.1</strong> Crimsonsky LTD may provide users with different
         communication facilities for self-created entries and posts on
         Crimsonsky LTD' websites, in the game, and on social networks
@@ -227,7 +231,7 @@ export default function Terms() {
         environment for an exchange of information. However, users do not have
         the right to claim communication features.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>5.2</strong> Users take full responsibility for the content and
         entries they post. Users agree to release Crimsonsky LTD from any
         legitimate claims from third parties arising from a culpable violation
@@ -236,7 +240,7 @@ export default function Terms() {
         Crimsonsky LTD the permanent, irrevocable, non-exclusive right to use
         the content and contributions posted by the users.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>5.3</strong> Within the context of these communication
         facilities, users are prohibited from publishing or distributing content
         on Crimsonsky LTD' websites that: a) violates an applicable law, goes
@@ -251,17 +255,17 @@ export default function Terms() {
         personal data of third parties without their explicit consent; h) is
         commercial, in particular promotional, in nature.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>5.4</strong> The inclusion of websites or names of companies and
         products is only permitted if this is not primarily for advertising
         purposes.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>5.5 </strong>All users of these communication facilities are
         required to use acceptable words. Abusive criticism or derogatory
         attacks shall be avoided.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>5.6</strong> Notwithstanding any other rights under these
         general terms and conditions, Crimsonsky LTD has the right to fully or
         partially remove content and entries that violate the rules of these
@@ -270,12 +274,14 @@ export default function Terms() {
         further use of Crimsonsky LTD' online and mobile games, websites, and
         other services.
       </p>
-      <h2>6 Consequences of a Breach of Duty</h2>
-      <p>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
+        6 Consequences of a Breach of Duty
+      </h1>
+      <p className="py-2 text-gray-200">
         <strong>6.1</strong> Crimsonsky LTD is not liable for damages resulting
         from a user's breach of duty.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>6.2</strong> Regardless of any additional legal or contractual
         rights, it is at the reasonable discretion of Crimsonsky LTD is to take
         the following actions against any user who culpably breaches statutory
@@ -288,13 +294,15 @@ export default function Terms() {
         the game in cases of a violation of item 6 of these general terms and
         conditions, or f) immediately terminate the contract.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>6.3</strong> If users have been blocked or excluded, they may
         not log in again to a service provided by Crimsonsky LTD without the
         prior consent of Crimsonsky LTD.
       </p>
-      <h2>7 Limitation of liability</h2>
-      <p>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
+        7 Limitation of liability
+      </h1>
+      <p className="py-2 text-gray-200">
         <strong>7.1</strong> Users are held personally liable for any violation
         of a third party's rights. Users agree to reimburse Crimsonsky LTD for
         all damages resulting from the culpable non-observance of the
@@ -306,17 +314,17 @@ export default function Terms() {
         court and legal fees. This condition does not apply if the user is not
         responsible for the infringement.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>7.2</strong> The liability of Crimsonsky LTD, on whatever legal
         grounds, whether due to contractual misconduct or a breach of duty, is
         ultimately determined in accordance with the following rules:
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>7.2.1</strong> If Crimsonsky LTD provides the respective
         liability-causing service free of charge, Crimsonsky LTD is liable only
         for malice and gross negligence.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>7.2.2</strong> In the case of non-gratuitous services,
         Crimsonsky LTD' liability is limited to cases of malice and gross
         negligence, but unlimited in cases of personal injury. In cases of
@@ -331,33 +339,35 @@ export default function Terms() {
         that the contract runs in accordance with its regulations and achieves
         the contractual aim.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>7.2.3</strong> Crimsonsky LTD assumes no liability for
         interruptions within the network that are not the fault of Crimsonsky
         LTD.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>7.2.4</strong> Crimsonsky LTD is liable for a loss of data in
         accordance with the foregoing paragraphs only if such a loss could not
         have been avoided by adequate backup measures taken by the user.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>7.2.5</strong> The aforementioned liability limitations do not
         apply in cases of explicit guarantees made by Crimsonsky LTD, in cases
         of malice, and for damages due to the loss of life, limb, or health.
         Liability shall remain unaffected under the Product Liability Act.
       </p>
-      <h2>10 Governing law</h2>
-      <p>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
+        10 Governing law
+      </h1>
+      <p className="py-2 text-gray-200">
         The laws of the United Kingdom shall apply; the UN Convention on
         Contracts for the International Sale of Goods (CISG) shall be excluded.
         The mandatory provisions of the country in which the user resides shall
         remain unaffected by this legal decision.
       </p>
-      <h2>
+      <h1 className="pt-10 pb-2 text-white text-lg font-bold font-montserrat underline">
         12 Amendments to these general terms and conditions; Miscellaneous
-      </h2>
-      <p>
+      </h1>
+      <p className="py-2 text-gray-200">
         12.1 Crimsonsky LTD retains the right to modify these terms and
         conditions (a) in the event of any amendments made due to legal changes,
         (b) in the event of any amendments made due to decisions by the Supreme
@@ -379,7 +389,7 @@ export default function Terms() {
         specifically inform its users about the four-week period, the right of
         withdrawal, and the legal significance of remaining silent.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>12.2</strong> Users are only entitled to an offset if their
         counterclaim has been legally established or has been recognized by
         Crimsonsky LTD and is uncontested or has resulted from this
@@ -387,7 +397,7 @@ export default function Terms() {
         retention provided that it pertains to claims arising from this
         contract.
       </p>
-      <p>
+      <p className="py-2 text-gray-200">
         <strong>12.3</strong> Crimsonsky LTD generally communicates with the
         user via email or Discord - unless indicated otherwise by these terms
         and conditions. Users need to ensure that they regularly check the email
@@ -398,7 +408,7 @@ export default function Terms() {
         oppose statutory provisions, the validity of the remaining provisions of
         the terms and conditions shall remain unaffected.
       </p>
-      <p>
+      <p className="pt-2 pb-10 text-gray-200">
         <strong>13 Licenses</strong> The game design of College Kings is
         licensed by Crimsonsky LTD.
       </p>

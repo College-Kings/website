@@ -12,6 +12,7 @@ const AccordionItemBig = ({
   imageId,
   setEffectImg,
   small,
+  title
 }) => {
   const [effect, setEffect] = useState(false);
   const handeActiveGirl = (indexGirl, id) => {
@@ -48,7 +49,7 @@ const AccordionItemBig = ({
               </span>
 
               <span className="text-orange-main xl:text-cardSubtitle font-bold 5xl:pb-5 m:pb-1 m:text-xl">
-                The Dreamer
+              {title}
               </span>
               <div className="max-w-[205px]">
                 <span className="font-montserrat m:text-sm xl:text text-white">
@@ -59,7 +60,7 @@ const AccordionItemBig = ({
             <div className="w-1/2 h-full relative rounded-br-3xl rounded-tl-3xl ">
               <Image
                 layout="fill"
-                alt='small'
+                alt="small"
                 src={small}
                 className="object-fit m:pb-1/3 lg:pt-2/3 2xl:pb-1/3  rounded-br-3xl rounded-tr-md"
               />
@@ -70,7 +71,6 @@ const AccordionItemBig = ({
             <span className="-rotate-90 text-accColapsedTitle text-orange-main font-bebas">
               {name}
             </span>
-            {/* <Play className="-rotate-90" /> */}
           </div>
         )}
       </div>

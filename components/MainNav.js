@@ -9,7 +9,7 @@ const MainNav = () => {
       <div className="relative z-50 m:hidden">
         <NavbarMobile />
       </div>
-      <div className="sticky top-0 z-50 hidden m:flex items-start ">
+      <div className="sticky top-0 z-50 hidden m:flex ">
         <Navbar />
       </div>
     </>

@@ -16,7 +16,7 @@ export default function Button({ text, icon, width, height, link }) {
       >
         <div className="bg-btn bg-no-repeat bg-cover h-full cursor-pointer  w-full flex justify-center align-center uppercase items-center text-center">
           <div className="w-full h-full bg-btnShade bg-no-repeat bg-cover flex justify-center align-middle items-center text-center relative">
-            <a className=" flex justify-center items-center align-center text-center text-white font-semibold  uppercase px-6  font-bebas text-xl tracking-wider">
+            <span className=" flex justify-center items-center align-center text-center text-white font-semibold  uppercase px-6  font-bebas text-xl tracking-wider">
               {text}
 
               {icon ? (
@@ -24,7 +24,7 @@ export default function Button({ text, icon, width, height, link }) {
                   <Play />
                 </span>
               ) : null}
-            </a>
+            </span>
 
             <div
               className={`${styles.box} rounded-lg rounded-tl-3xl rounded-br-3xl  w-full h-full`}

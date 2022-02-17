@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Modal from './Modal';
 import twitter from '../public/assets/twitter.png';
 import instagram from '../public/assets/instagram.png';
@@ -105,24 +106,14 @@ export default function Footer() {
       <div className="w-[220px] flex flex-col h-auto my-4">
         <span className="text-white text-xl font-bold pb-2">Legal</span>
         <span className="text-gray-500 hover:text-white cursor-pointer">
-          <a
-            target="_blank"
-            href="https://collegekingsgame.com/terms-and-conditions/"
-            rel="noopener noreferrer"
-            className="cursor-pointer "
-          >
+          <Link href="/terms" className="cursor-pointer ">
             Terms and Conditions
-          </a>
+          </Link>
         </span>
         <span className="text-gray-500 hover:text-white cursor-pointer">
-          <a
-            target="_blank"
-            href="https://collegekingsgame.com/privacy-policy/"
-            rel="noopener noreferrer"
-            className="cursor-pointer "
-          >
+          <Link href="/privacy" className="cursor-pointer ">
             Privacy Policy
-          </a>
+          </Link>
         </span>
       </div>
       <div className="w-[220px] flex flex-col h-auto my-4">

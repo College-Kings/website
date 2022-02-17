@@ -17,7 +17,7 @@ import lindseySmall from '../public/assets/Lindsey_small.png';
 import penelopeSmall from '../public/assets/Penelope_website_small.png';
 const AccordionButton = dynamic(() => import('./AccordionButton'));
 // import AccordionButton from './AccordionButton';
-import {AccMemoized} from './AccordionItemBig';
+import { AccMemoized } from './AccordionItemBig';
 
 const VerticalAccordion = () => {
   const [activeGirlIndexNames, setActiveGirlIndexNames] = useState(0);
@@ -34,6 +34,7 @@ const VerticalAccordion = () => {
       img: nora,
       id: 0,
       small: noraSmall,
+      title: 'The Dreamer',
     },
     {
       name: 'Chloe',
@@ -41,6 +42,7 @@ const VerticalAccordion = () => {
       img: chloe,
       id: 1,
       small: chloeSmall,
+      title: "The 'It Girl",
     },
     {
       name: 'Lauren',
@@ -48,6 +50,7 @@ const VerticalAccordion = () => {
       img: lauren,
       id: 2,
       small: laurenSmall,
+      title: 'The Innocent',
     },
     {
       name: 'Aubrey',
@@ -55,6 +58,7 @@ const VerticalAccordion = () => {
       img: aubrey,
       id: 3,
       small: aubreySmall,
+      title: ' The Open',
     },
     {
       name: 'Penelope',
@@ -62,6 +66,7 @@ const VerticalAccordion = () => {
       img: penelope,
       id: 4,
       small: penelopeSmall,
+      title: 'The Lone Wolf ',
     },
     {
       name: 'Riley',
@@ -69,6 +74,7 @@ const VerticalAccordion = () => {
       img: riley,
       id: 5,
       small: rileySmall,
+      title: 'The Passionate',
     },
     {
       name: 'Lindsey',
@@ -76,6 +82,7 @@ const VerticalAccordion = () => {
       img: lindsey,
       id: 6,
       small: lindseySmall,
+      title: 'The Popular',
     },
   ];
 
@@ -85,7 +92,7 @@ const VerticalAccordion = () => {
       activeGirlIndexNames + 3
     );
     setActiveNames(firstNamesSlice);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleChange = (index) => {
@@ -112,7 +119,7 @@ const VerticalAccordion = () => {
         onAnimationEnd={() => setEffectImg(false)}
       >
         <div className="z-0">
-          <Image src={names[activeId].img} className="z-0"  alt='active'/>
+          <Image src={names[activeId].img} className="z-0" alt="active" />
         </div>
       </div>
       <div>
@@ -134,6 +141,7 @@ const VerticalAccordion = () => {
                 key={index}
                 index={index}
                 name={girl.name}
+                title={girl.title}
                 text={girl.text}
                 activeGirlIndexNames={activeGirlIndexNames}
                 setActiveGirl={setActiveGirl}

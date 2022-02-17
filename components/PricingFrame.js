@@ -7,8 +7,8 @@ export default function PricingFrame() {
   return (
     <div className="flex flex-row bg-red-600 align-middle justify-center items-center w-full h-80 max-h-auto overflow-clip">
       <Image src={frame} className="relative" alt='frame' />
-
-      <div className="w-full h-full bg-pricingShade bg-no-repeat bg-cover absolute ">
+{/* absolute */}
+      <div className="w-full h-full bg-pricingShade bg-no-repeat bg-cover  ">
         <Pricing width={184} height={38.26} name={'freshman'} />
       </div>
     </div>

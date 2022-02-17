@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
-import styles from './index.module.css';
-import Button from './Button';
-import Pricing from './Pricing';
-const BulletBlack = dynamic(() => import('../public/assets/bullet-black.svg'));
+
+//components
+const Pricing = dynamic(() => import('../Pricing'));
+const Button = dynamic(() => import('../Button'));
+
+//assets
+import styles from '../index.module.css';
+const BulletBlack = dynamic(() => import('../../public/assets/bullet-black.svg'));
 const BulletYellow = dynamic(() =>
-  import('../public/assets/bullet-yellow.svg')
+  import('../../public/assets/bullet-yellow.svg')
 );
 
 
 
-const Section5 = () => {
+const Section9 = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <div className="flex flex-col m:flex-row m:flex-wrap justify-center m:justify-around items-center align-middle bg-gradient-to-b  from-black-main via-blue-main to-black-main bg-opacity-75 xl:hidden z-10">
+      <div className="flex flex-col m:flex-row m:flex-wrap justify-center m:justify-around items-center align-middle bg-gradient-to-b  from-black-main via-blue-main to-black-secondary bg-opacity-75 xl:hidden z-10">
         <Pricing
           width={184}
           height={38.26}
@@ -47,4 +51,4 @@ const Section5 = () => {
   );
 };
 
-export default Section5;
+export default Section9;

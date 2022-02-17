@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styles from './index.module.css';
-import Image from 'next/image';
-import Play from '../public/assets/play.svg';
 
 const VerticalAccordionItem = ({
   name,
@@ -12,13 +10,13 @@ const VerticalAccordionItem = ({
   setActiveId,
   imageId,
   setEffectImg,
+  title
 }) => {
   const [effect, setEffect] = useState(false);
 
   useEffect(() => {
     setActiveGirl(0);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [name]);
+  }, [setActiveGirl]);
 
   const handeActiveGirl = (indexGirl, id) => {
     setActiveGirl(indexGirl);
@@ -46,7 +44,7 @@ const VerticalAccordionItem = ({
           >
             <div className=" flex flex-col ">
               <span className="text-white font-bold">{name}</span>
-              <span className="text-orange-main font-bold">The Dreamer</span>
+              <span className="text-orange-main font-bold">{title}</span>
               <span className="text-white text-sm">{text}</span>
             </div>
           </div>
@@ -63,4 +61,4 @@ const VerticalAccordionItem = ({
   );
 };
 
-export  const MemoizedVertical = React.memo(VerticalAccordionItem);
+export const MemoizedVertical = React.memo(VerticalAccordionItem);

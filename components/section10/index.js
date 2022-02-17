@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-// const Pricing = dynamic(() => import('./Pricing'));
-import Pricing from './Pricing';
-import Button from './Button';
-// const Button = dynamic(() => import('./Button'));
-import kingsFrame from '../public/assets/kings-frame.png';
-import kingsShade from '../public/assets/kings-shade.webp';
+const Pricing = dynamic(() => import('../Pricing'));
+const Button = dynamic(() => import('../Button'));
+import kingsFrame from '../../public/assets/kings-frame.png';
+import kingsShade from '../../public/assets/kings-shade.webp';
 
-const ExclusiveAcc = dynamic(() => import('../public/assets/exclusiveAcc.svg'));
-import styles from './index.module.css';
+const ExclusiveAcc = dynamic(() =>
+  import('../../public/assets/exclusiveAcc.svg')
+);
+import styles from '../index.module.css';
 
 const Section6 = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="hidden xl:flex bg-gradient-to-b from-black-secondary via-blue-main to to-black-secondary py-20">
+    <div className="hidden min-h-[1500px] xl:flex bg-gradient-to-b from-black-secondary via-blue-main to to-black-secondary py-20">
       <div
         className="hidden w-full min-h-325 xl:flex justify-center items-center
            "

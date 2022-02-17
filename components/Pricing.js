@@ -80,7 +80,8 @@ export default function Pricing({ width, height, showModal }) {
       return;
     }
     setImgData(data);
-  }, [imgData, showModal]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showModal]);
 
   return (
     <>
@@ -103,10 +104,10 @@ export default function Pricing({ width, height, showModal }) {
               <span className="absolute text-white z-10 inset-2 uppercase font-syne ">
                 {img.name}
               </span>
-              <Image src={title} alt='title' />
+              <Image src={title} alt="title" />
             </div>
             <div>
-              <Image src={img.img} alt='image' />
+              <Image src={img.img} alt="image" />
             </div>
             <PricingContent
               width={width}
