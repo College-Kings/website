@@ -10,6 +10,7 @@ const Hero = () => {
         <Image
           src={banner}
           priority={true}
+          layout='responsive'
           alt="mobile"
           className="w-full background-repeat: no-repeat"
         />
