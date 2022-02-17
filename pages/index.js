@@ -27,7 +27,7 @@ const SectionPoslednja = dynamic(() =>
 
 export default function Home({ isConnected }) {
   return (
-    <div className="max-w-[1980px] h-full">
+    <div className=" 5xl:max-w-[1980px] 5xl:h-full ">
       <span id="hero"></span>
       <MainNav />
       <Hero />

@@ -8,14 +8,13 @@ const Hero = () => {
     <>
       <div className="md:hidden bg-black-secondary">
         <Image
-          layout="responsive"
           src={banner}
           priority={true}
           alt="mobile"
           className="w-full background-repeat: no-repeat"
         />
       </div>
-      <div className="hidden md:flex justify-center  relative bg-black-secondary max-w-[1980px]">
+      <div className="hidden md:flex justify-center  relative bg-black-secondary">
         <Image
           priority={true}
           alt="desktop"
