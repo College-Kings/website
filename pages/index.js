@@ -2,7 +2,8 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import clientPromise from '../lib/mongodb';
-
+import Head from 'next/head';
+import Script from 'next/script';
 import aubreyBig from '../public/assets/aubrey-big.webp';
 const Accordion = dynamic(() => import('../components/Accordion'));
 import BigScreenAccordion from '../components/BigScreenAccordion';
@@ -28,6 +29,20 @@ const SectionPoslednja = dynamic(() =>
 export default function Home({ isConnected }) {
   return (
     <div className=" 5xl:max-w-[1980px] 5xl:h-full ">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-176402481-3"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-176402481-3');
+        `}
+      </Script>
+
       <span id="hero"></span>
       <MainNav />
       <Hero />

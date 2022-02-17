@@ -1,9 +1,23 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import Script from 'next/script';
 
+/* eslint-disable react/no-unescaped-entities */
 export default function Privacy() {
   return (
     <div className="bg-black-secondary flex flex-col  font-montserrat px-5">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-176402481-3"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-176402481-3');
+        `}
+      </Script>
       <h1 className="pt-10 pb-2 text-white text-lg font-bold underline">
         Privacy Policy
       </h1>
