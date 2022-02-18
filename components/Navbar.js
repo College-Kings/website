@@ -31,6 +31,7 @@ export default function Navbar() {
           width={120}
           height={170}
           className="z-100"
+          priority={true}
         />
       </div>
       <div className="absolute h-15 lg:h-20 left-36 lg:left-56 xl:ml-100 xl:left-80">

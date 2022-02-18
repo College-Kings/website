@@ -77,3 +77,10 @@
 .game-modes {
   @apply uppercase text-orange-main font-bold 
 }
+
+
+/*modal*/
+
+.modal {
+  @apply w-full h-full px-2 flex flex-col justify-center items-center bg-gray-500
+}

@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import styles from './index.module.css';
-const Modal = ({ show, onClose, children }) => {
+const Modal = ({ show, onClose, children, currRef }) => {
   const [isBrowser, setIsBrowser] = useState(false);
   useEffect(() => {
     setIsBrowser(true);
   }, []);
-  
-  
+
   const handleClose = (e) => {
+    console.log(imgRef.current);
+    if (e.target === currRef.current) return;
+
     e.preventDefault();
     onClose();
   };

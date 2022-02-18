@@ -165,20 +165,6 @@
 
 
 
-
-
-
-
-/* @media screen and (max-width: 768px) {
-  .expanded {
-    width: 181.52px;
-    height: 225.57px;
-    margin-right: 10px;
-    z-index: 11111;
-  }
-} */
-
-
 /*MobileAccordion*/
 .accordionMobile {
   height: 34.25px;
@@ -218,4 +204,8 @@
 
 .youtube .ytp-title-text {
   display: none;
+}
+
+.active-os {
+  border: '1px solid #fff'
 }

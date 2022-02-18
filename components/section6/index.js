@@ -2,13 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 //components
-const Button = dynamic(() => import('../Button'));
 const LauncherButton = dynamic(() => import('../LauncherButton'));
 
 //assets
 import goldCrown from '../../public/assets/gold-crown.png';
 
-const index = () => {
+const Section6 = () => {
   return (
     <div className="m:hidden">
       <div className="w-full bg-black-main flex flex-col items-center justify-center py-10">
@@ -35,10 +34,10 @@ const index = () => {
           content as a thank you!
         </p>
         <span className="py-6 text-white z-40 w-11/12 text-center x:pb-10 2xl:pb-14 m:pb-1 x:text-steamParagraph m:text-sm font-montserrat">
-              Download our launcher and play Act 1 for free, no login required.
-              If you like it, unlock Act 2, 3 and 4 easily inside the launcher
-              by becoming a Patron.
-            </span>
+          Download our launcher and play Act 1 for free, no login required. If
+          you like it, unlock Act 2, 3 and 4 easily inside the launcher by
+          becoming a Patron.
+        </span>
 
         <LauncherButton
           text={'download the launcher'}
@@ -46,19 +45,18 @@ const index = () => {
           width={324.96}
           height={65.35}
         />
-         <span className="py-5 text-white underline z-40 x:text-steamParagraph font-montserrat cursor-pointer">
-        <a
-          target="_blank"
-          href="https://store.steampowered.com/app/1463120/College_Kings__Act_I/"
-          rel="noopener noreferrer"
-        >
-          Play College Kings on Steam
-        </a>
-      </span>
+        <span className="py-5 text-white underline z-40 x:text-steamParagraph font-montserrat cursor-pointer">
+          <a
+            target="_blank"
+            href="https://store.steampowered.com/app/1463120/College_Kings__Act_I/"
+            rel="noopener noreferrer"
+          >
+            Play College Kings on Steam
+          </a>
+        </span>
       </div>
-     
     </div>
   );
 };
 
-export default index;
+export default Section6;
