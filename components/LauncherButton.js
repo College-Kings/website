@@ -5,7 +5,7 @@ import Image from 'next/image';
 //assets
 import styles from '../components/index.module.css';
 import Play from '../public/assets/play.svg';
-import Modal from './Modal';
+import LauncherModal from './LauncherModal';
 const Windows = dynamic(() => import('../public/assets/windows_logo.svg'));
 const Apple = dynamic(() => import('../public/assets/apple-logo.svg'));
 import ck from '../public/assets/ck-crown-dl.webp';
@@ -23,13 +23,14 @@ const LauncherButton = ({ text, icon, width, height }) => {
     const link = document.createElement('a');
     if (arg === 'windows') {
       link.href = `/zip/College_Kings_Setup_v0.1.3.exe`;
-    } else {
-      link.href = `/zip/College-Kings-0.1.2.dmg`;
+    } else if (arg === 'mac') {
+      link.href = `/mac/College-Kings-0.1.2.dmg`;
     }
 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    setShowModal(false);
   };
 
   return (
@@ -61,7 +62,7 @@ const LauncherButton = ({ text, icon, width, height }) => {
           ></div>
         </div>
       </div>
-      <Modal currRef={modalRef} show={showModal} onClose={setShowModal}>
+      <LauncherModal currRef={modalRef} show={showModal} onClose={setShowModal}>
         <div ref={modalRef} className="modal">
           <Image
             src={ck}
@@ -71,21 +72,23 @@ const LauncherButton = ({ text, icon, width, height }) => {
             className="rounded-md z-0"
           />
 
-          <span className="py-8 text-white text-xl font-bold">
+          <span className="py-8 text-black text-xl font-bold">
             Please choose your OS:
           </span>
           <div className="w-full flex justify-between items-center align-centre pb-5">
             <button
               onClick={() => handleDownload('windows')}
-              className="ml-5 w-2/5 rounded py-3 flex justify-center tems-center border cursor-pointer border-sky-400 "
+              className="ml-5 w-2/5 rounded py-3 flex flex-col justify-center items-center border cursor-pointer border-sky-400"
             >
-              <Windows className="z-0" />
+              <Windows />
+              <span className="py-2">Windows</span>
             </button>
             <button
               onClick={() => handleDownload('mac')}
-              className="mr-5 w-2/5 rounded py-3 flex justify-center tems-center border cursor-pointer border-sky-400"
+              className="mr-5 w-2/5 rounded py-3 flex flex-col justify-center items-center border cursor-pointer border-sky-400"
             >
               <Apple />
+              <span className="py-2">Mac OS</span>
             </button>
           </div>
 
@@ -93,10 +96,10 @@ const LauncherButton = ({ text, icon, width, height }) => {
             onClick={handleClose}
             className="w-8/12 bg-sky-400 hover:bg-white text-white hover:text-sky-400 font-bold py-2 px-4 border border-sky-400 rounded"
           >
-            No, thanks
+            Cancel
           </button>
         </div>
-      </Modal>
+      </LauncherModal>
     </div>
   );
 };

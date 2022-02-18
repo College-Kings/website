@@ -82,5 +82,6 @@
 /*modal*/
 
 .modal {
-  @apply w-full h-full px-2 flex flex-col justify-center items-center bg-gray-500
+  @apply w-full h-full px-2 flex flex-col justify-center items-center
 }
+
