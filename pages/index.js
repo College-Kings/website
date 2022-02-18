@@ -2,9 +2,9 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import clientPromise from '../lib/mongodb';
-import Head from 'next/head';
 import Script from 'next/script';
 import aubreyBig from '../public/assets/aubrey-big.webp';
+import CookieConsent, { Cookies } from 'react-cookie-consent';
 const Accordion = dynamic(() => import('../components/Accordion'));
 import BigScreenAccordion from '../components/BigScreenAccordion';
 const Footer = dynamic(() => import('../components/Footer'));
@@ -107,6 +107,28 @@ export default function Home({ isConnected }) {
         </div>
       </section>
       <Footer />
+      <CookieConsent
+        location="bottom"
+        buttonText="I accept"
+        cookieName="myAwesomeCookieName2"
+        style={{ background: '#2B373B' }}
+        buttonStyle={{ color: '#EF8A01', fontSize: '13px' }}
+        expires={150}
+        onAccept={(acceptedByScrolling) => {
+          if (acceptedByScrolling) {
+            // triggered if user scrolls past threshold
+            console.log('Accept was triggered by user scrolling');
+          } else {
+            console.log('Accept was triggered by clicking the Accept button');
+          }
+        }}
+        enableDeclineButton
+        onDecline={() => {
+          console.log('nay!');
+        }}
+      >
+        This website uses cookies to enhance the user experience.{' '}
+      </CookieConsent>
     </div>
   );
 }
