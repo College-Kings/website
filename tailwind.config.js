@@ -144,8 +144,6 @@ module.exports = {
           secondary: '#6D1945',
           grad: '#4f1449',
           new: '#B200B6',
-
-          
         },
         orange: {
           main: '#EF8A01',
@@ -153,7 +151,7 @@ module.exports = {
         },
         pink: {
           main: '#FC56FF',
-          dark:'#280a19'
+          dark: '#280a19',
         },
         gray: {
           main: '#404E53',
@@ -185,6 +183,7 @@ module.exports = {
         11.715: '2.929rem', //46.86
         12.383: '3.096rem', //49.83
         12.75: '3.188rem', //51
+        13.75: '3.438rem', //55
         14.14: '3.535rem', //56.56
         16.515: '4.129rem', //66.06
         16.25: '4.063rem', //65
@@ -250,7 +249,7 @@ module.exports = {
         // 'scroll-frame': "url('/assets/scroll-frame.png')",
         // 'slow-orb': "url('/assets/slow-orb.webp')",
         // street: "url('/assets/street.png')",
-        // nav: "url('/assets/nav-frame.png')",
+        nav: "url('/assets/nav.webp')",
         crown: "url('/assets/big-crown.png')",
         btn: "url('/assets/button-background.png')",
         btnShade: "url('/assets/button-shade.png')",

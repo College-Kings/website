@@ -22,7 +22,7 @@ const Subtitle = () => {
           <div className="mr-1.75">
             <Steam className="w-13 h-13 " />
           </div>
-          <p className="sub-txt-white">500k</p>
+          <p className="sub-txt-white">900k</p>
           <div className="flex flex-col flex-nowrap">
             <p className="sub-txt">players</p>
             <p className="sub-txt">on steam</p>

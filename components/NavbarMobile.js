@@ -14,9 +14,9 @@ export default function NavbarMobile() {
   };
 
   return (
-    <nav className="flex  items-center flex-wrap px-3 bg-gradient-to-b from-black-main to-purple-main sticky top-0">
-      <div className="relative h-18.325 left-0 top-0 flex-1">
-        <Image src="/assets/logo.png" alt="logo" width={100} height={150}  />
+    <nav className="flex z-50 items-center flex-wrap px-3 bg-gradient-to-b from-black-main to-purple-main">
+      <div className="relative h-18.325 left-0 top-0 flex-1 z-50">
+        <Image src="/assets/logo.png" alt="logo" width={100} height={150} />
       </div>
       <div className=" w-1/2 h-18.325 flex  justify-end items-center align-middle mr-4">
         <button onClick={handleClick}>
@@ -63,7 +63,8 @@ export default function NavbarMobile() {
           <a
             target="_blank"
             href="https://www.patreon.com/collegekings"
-            className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-orange-main hover:text-white text-center uppercase " rel="noreferrer"
+            className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-orange-main hover:text-white text-center uppercase "
+            rel="noreferrer"
           >
             patreon
           </a>

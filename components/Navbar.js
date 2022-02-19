@@ -9,8 +9,8 @@ export default function Navbar() {
   const [showSupport, setShowSupport] = useState(false);
 
   return (
-    <div className="w-full h-20 lg:h-25 absolute bg-black-secondary">
-      <div className="w-full absolute h-full">
+    <div className="h-20 lg:h-25 bg-nav z-50  ">
+      {/* <div className="w-full h-full">
         <Image
           src={'/assets/nav.webp'}
           className="object-cover bg-no-repeat  h-full"
@@ -18,7 +18,7 @@ export default function Navbar() {
           layout="fill"
           priority={true}
         />
-      </div>
+      </div> */}
 
       <div className={`w-20 ml-13 absolute lg:hidden`}>
         <Image src={logo} alt="logo" width={100} height={150} />
@@ -34,7 +34,7 @@ export default function Navbar() {
           priority={true}
         />
       </div>
-      <div className="absolute h-15 lg:h-20 left-36 lg:left-56 xl:ml-100 xl:left-80">
+      {/* <div className="absolute h-15 lg:h-20 left-36 lg:left-56 xl:ml-100 xl:left-80">
         <div className="h-full flex justify-start align-middle z-50 overflow-hidden">
           <div className="group">
             <div className="h-full w-25 mr-1 flex justify-center align-middle items-center border-b-4 border-orange-main  group-hover:border-white m:w-32.5 xl:w-32.5 x:w-46.25 5xl:w-70 group-hover:bg-gradient-to-b from-orange-main to-orange-second">
@@ -111,7 +111,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -24,7 +24,7 @@ const LauncherButton = ({ text, icon, width, height }) => {
     if (arg === 'windows') {
       link.href = `/zip/College_Kings_Setup_v0.1.3.exe`;
     } else if (arg === 'mac') {
-      link.href = `/mac/College-Kings-0.1.2.dmg`;
+      link.href = `/mac/College_Kings_0.1.3.zip`;
     }
 
     document.body.appendChild(link);
@@ -76,13 +76,13 @@ const LauncherButton = ({ text, icon, width, height }) => {
             Please choose your OS:
           </span>
           <div className="w-full flex justify-between items-center align-centre pb-5">
-            <button
+            <a
               onClick={() => handleDownload('windows')}
               className="ml-5 w-2/5 rounded py-3 flex flex-col justify-center items-center border cursor-pointer border-sky-400"
             >
               <Windows />
               <span className="py-2">Windows</span>
-            </button>
+            </a>
             <button
               onClick={() => handleDownload('mac')}
               className="mr-5 w-2/5 rounded py-3 flex flex-col justify-center items-center border cursor-pointer border-sky-400"
