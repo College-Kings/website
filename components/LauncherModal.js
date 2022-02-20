@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import styles from './index.module.css';
+
 const LauncherModal = ({ show, onClose, children, currRef }) => {
   const [isBrowser, setIsBrowser] = useState(false);
-
+ 
   useEffect(() => {
     setIsBrowser(true);
   }, []);

@@ -28,7 +28,7 @@ const SectionPoslednja = dynamic(() =>
 
 export default function Home({ isConnected }) {
   return (
-    <div className=" 5xl:max-w-[1980px] 5xl:h-full ">
+    <div className=" 5xl:max-w-[2133.33px] 5xl:h-full ">
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=UA-176402481-3"
         strategy="afterInteractive"
@@ -43,8 +43,9 @@ export default function Home({ isConnected }) {
         `}
       </Script>
 
-      <span id="hero"></span>
-      <MainNav />
+      <span id="hero">
+        <MainNav />
+      </span>
       <Hero />
       <Subtitle />
       <Section1 />

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../components/index.module.css';
 import Play from '../public/assets/play.svg';
 import SmoothScroll from './SmoothScroll';
 
 export default function Button({ text, icon, width, height, link }) {
+  
+  useEffect(() => {
+    if(!link) return
+  },[link])
+
   return (
     <SmoothScroll href={link ? link : ''}>
       <div

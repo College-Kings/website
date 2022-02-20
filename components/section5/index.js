@@ -17,7 +17,7 @@ const Section5 = () => {
   return (
     <div className="hidden m:flex flex-col pt-80 m:pt-100 5xl:pt-120  bg-purple-grad">
       <div className="w-full  h-90  z-10 flex xl:h-106.985 5xl:h-154.25 5xl:-ml-8">
-        <div className="w-full xl:w-11/12 h-90 xl:h-106.985  relative 2xl:-left-25.75 5xl:h-154.25  5xl:ml-34.25">
+        <div className="w-full xl:w-10/12 h-90 xl:h-106.985  relative 2xl:-left-25.75 5xl:h-154.25  5xl:ml-34.25">
           <Image
             layout="fill"
             src={kingsBig}
@@ -55,7 +55,7 @@ const Section5 = () => {
             <h2 className="text-pink-main z-40 m:pt-1 m:pb-1 x:pt-14 pb-8 text-steam m:fo font-bebas">
               PLAY ACT 1 FOR FREE
             </h2>
-            <span className="text-white z-40 w-11/12 text-center x:pb-10 2xl:pb-14 m:pb-1 x:text-steamParagraph m:text-sm font-montserrat">
+            <span className="text-white z-40 w-10/12  text-center x:pb-10 2xl:pb-14 m:pb-1 x:text-steamParagraph m:text-sm font-montserrat">
               Download our launcher and play Act 1 for free, no login required.
               If you like it, unlock Act 2, 3 and 4 easily inside the launcher
               by becoming a Patron.

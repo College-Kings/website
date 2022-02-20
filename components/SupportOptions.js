@@ -1,25 +1,18 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-//assets
-const DiscordSVG = dynamic(() => import('../public/assets/discordSVG.svg'));
+import Image from 'next/image';
 
+//components
+const Button = dynamic(() => import('./Button'));
 
-// const data = [
-//   {
-//     icon: <DiscordSVG />,
-//     btnText: 'JOIN COLLEGE KINGS DISCORD',
-//     title: 'LIVE BUG CHAT SUPPORT',
-//     text: 'If you encountered a bug or have problems running the game, please join our Discord server and connect with our support team on the #bugs-help channel.',
-//   },
-// ];
-
-const SupportOptions = () => {
+const SupportOptions = ({ option }) => {
   return (
-    <div>
-      svg
-      <h2>title</h2>
-      <p>paragraph</p>
-      <button>Batenga</button>
+    <div className="my-10 w-full  h-full flex bg-white">
+      {data.map((el, index) => {
+        <div className="w-[300px] h-[400px] flex flex-col bg-white">
+          <Button text={option.btnText} width={260} height={53} icon={false} />
+        </div>;
+      })}
     </div>
   );
 };

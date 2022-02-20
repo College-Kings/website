@@ -11,12 +11,17 @@ const Apple = dynamic(() => import('../public/assets/apple-logo.svg'));
 import ck from '../public/assets/ck-crown-dl.webp';
 
 const LauncherButton = ({ text, icon, width, height }) => {
-  const [showModal, setShowModal] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const modalRef = useRef(null);
 
   const handleClose = () => {
-    setShowModal(false);
+    setShowPopup(false);
+  };
+
+  const handleClick = () => {
+
+    setShowPopup(true);
   };
 
   const handleDownload = (arg) => {
@@ -30,7 +35,7 @@ const LauncherButton = ({ text, icon, width, height }) => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    setShowModal(false);
+    setShowPopup(false);
   };
 
   return (
@@ -43,7 +48,7 @@ const LauncherButton = ({ text, icon, width, height }) => {
       }}
     >
       <div
-        onClick={() => setShowModal(true)}
+        onClick={handleClick}
         className="bg-btn bg-no-repeat bg-cover h-full cursor-pointer  w-full flex justify-center align-center uppercase items-center text-center"
       >
         <div className="w-full h-full bg-btnShade bg-no-repeat bg-cover flex justify-center align-middle items-center text-center relative">
@@ -62,7 +67,7 @@ const LauncherButton = ({ text, icon, width, height }) => {
           ></div>
         </div>
       </div>
-      <LauncherModal currRef={modalRef} show={showModal} onClose={setShowModal}>
+      <LauncherModal currRef={modalRef} show={showPopup} onClose={setShowPopup}>
         <div ref={modalRef} className="modal">
           <Image
             src={ck}

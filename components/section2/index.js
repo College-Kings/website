@@ -45,7 +45,7 @@ const Section2 = () => {
 
       <div className=" -mb-12 flex justify-center m:hidden">
         <YouTube
-          videoId="4Kf-W0M5FwA"
+          videoId="4Kf-W0M5FwA/enablejsapi=1&amp"
           className={`${styles.youtube} w-83 h-44.25 frame-background`}
         />
       </div>
@@ -53,7 +53,7 @@ const Section2 = () => {
         <Image src={chloeSit} className={styles.zIndex} alt="chloe-sit" />
       </div>
 
-      <div className="hidden w-full bg-black-secondary m:flex my-10 md:justify-center md:align-middle items-center bg-transparent  m:h-84.987 lg:h-103 5xl:h-154.25  ">
+      <div className="hidden w-full bg-black-secondary m:flex my-10 md:justify-center md:align-middle  items-center bg-transparent  m:h-84.987 lg:h-103 5xl:h-154.25  ">
         <div className="relative flex flex-row justify-center align-middle items-center w-full m:h-84.987 lg:h-103 5xl:h-154.25">
           <Image
             layout="fill"
@@ -65,7 +65,7 @@ const Section2 = () => {
 
           <div className="w-5/12 lg:w-6/12 lg:ml-10  relative flex justify-center align-middle md:h-77.51 2xl:h-95 5xl:h-136 5xl:ml-37.75">
             <YouTube
-              videoId="4Kf-W0M5FwA"
+              videoId="4Kf-W0M5FwA/enablejsapi=1&amp"
               className="absolute top-0 left-0 w-full  h-full frame-background"
             />
           </div>
@@ -74,7 +74,7 @@ const Section2 = () => {
             <Image src={chloeSit} alt="chloe sit" />
           </div>
 
-          <div className="hidden  w-6/12 xl:flex justify-end align-middle md:-ml-1 xl:-ml-10 scale-110">
+          <div className="hidden  w-6/12 xl:flex justify-end align-middle md:-ml-1 xl:-ml-10 5xl:-ml-66 scale-110">
             <Image src={bigChloe} alt="chloe" className={styles.zIndex} />
           </div>
         </div>

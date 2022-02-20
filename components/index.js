@@ -12,7 +12,7 @@ const ExclusiveAcc = dynamic(() =>
 import styles from '../index.module.css';
 
 const Section6 = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showExpand, setShowExpand] = useState(false);
 
   return (
     <div className="hidden min-h-[1500px] xl:flex bg-gradient-to-b from-black-secondary via-blue-main to to-black-secondary py-20">
@@ -24,7 +24,7 @@ const Section6 = () => {
           <div className="relative min-h-fit min-w-fit">
             <div
               className={`${
-                showModal ? styles.frameExpanded : styles.frameColapsed
+                showExpand ? styles.frameExpanded : styles.frameColapsed
               } absolute h-325 inset-0`}
             >
               <Image
@@ -36,7 +36,7 @@ const Section6 = () => {
             </div>
             <div
               className={`${
-                showModal ? styles.frameExpanded : styles.frameColapsed
+                showExpand ? styles.frameExpanded : styles.frameColapsed
               } absolute h-325  inset-0`}
             >
               <Image
@@ -65,19 +65,20 @@ const Section6 = () => {
                 height={46.26}
                 name={'freshman'}
                 className="mr-5"
-                showModal={showModal}
+                showModal={showExpand}
               />
             </div>
             <div className="w-full flex justify-center items-center pb-6 z-10">
               <div
                 className={styles.btn}
-                onClick={() => setShowModal(!showModal)}
+                onClick={() => setShowExpand(!showExpand)}
               >
                 <Button
-                  text={'See All 5 Levels'}
+                  text={'See all 5 Levels'}
                   width={260}
                   height={53}
                   icon={true}
+            
                 />
               </div>
             </div>

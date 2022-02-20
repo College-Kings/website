@@ -39,7 +39,7 @@ const PricingContent = ({ width, height, price, text, link }) => {
             className="flex min-h-[32px] w-full flex-col justify-start align-middle items-start px-2"
           >
             <div className="w-full my-1.75 z-30 flex justify-center align-middle items-center ">
-              <Separator className='z-30'/>
+              <Separator className="z-30" />
             </div>
             <div className="w-full h-full flex  align-middle justify-start items-center">
               <div className="mr-1.25 z-30">

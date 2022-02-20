@@ -7,12 +7,12 @@ const Button = dynamic(() => import('../Button'));
 
 //assets
 import styles from '../index.module.css';
-const BulletBlack = dynamic(() => import('../../public/assets/bullet-black.svg'));
+const BulletBlack = dynamic(() =>
+  import('../../public/assets/bullet-black.svg')
+);
 const BulletYellow = dynamic(() =>
   import('../../public/assets/bullet-yellow.svg')
 );
-
-
 
 const Section9 = () => {
   const [showModal, setShowModal] = useState(false);

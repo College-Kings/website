@@ -209,3 +209,26 @@
 .active-os {
   border: '1px solid #fff'
 }
+
+
+/* .navShape {
+  clip-path: polygon(0 0, 100% 0, 92% 99%, 8% 100%);
+
+} */
+.navShape {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 8% 156%);
+  position: relative;
+  width: 99vw;
+  height: 90px
+}
+
+
+@media screen and (min-width: 2134px) {
+  .navShape {
+    width: 55.5vw
+  }
+}
+
+.centerFix {
+  margin: 0 auto;
+}
