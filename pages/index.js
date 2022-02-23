@@ -59,8 +59,8 @@ export default function Home({ isConnected }) {
       <Section6 />
       <Section7 />
       <Section8 />
-      //<Section9 />
-      //<Section10 />
+            {/* <Section9 />
+      <Section10 /> */}
       <SectionPoslednja />
       <Accordion />
 
