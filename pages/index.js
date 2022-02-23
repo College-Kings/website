@@ -20,8 +20,8 @@ const Section5 = dynamic(() => import('../components/section5'));
 const Section6 = dynamic(() => import('../components/section6'));
 const Section7 = dynamic(() => import('../components/section7'));
 const Section8 = dynamic(() => import('../components/section8'));
-//const Section9 = dynamic(() => import('../components/Section9'));
-//const Section10 = dynamic(() => import('../components/Section10'));
+const Section9 = dynamic(() => import('../components/Section9'));
+const Section10 = dynamic(() => import('../components/Section10'));
 const SectionPoslednja = dynamic(() =>
   import('../components/section-poslednja')
 );
@@ -59,8 +59,8 @@ export default function Home({ isConnected }) {
       <Section6 />
       <Section7 />
       <Section8 />
-            {/* <Section9 />
-      <Section10 /> */}
+      <Section9 />
+      <Section10 />
       <SectionPoslednja />
       <Accordion />
 
