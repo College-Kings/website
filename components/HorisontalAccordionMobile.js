@@ -4,13 +4,16 @@ import Image from 'next/image';
 import { MemoizedVertical } from './VerticalAccordionItem';
 import AccordionButton from './AccordionButton';
 import Play from '../public/assets/play.svg';
-import nora from '../public/assets/Nora_acc.png';
-import chloe from '../public/assets/Chloe_acc.webp';
-import lauren from '../public/assets/Lauren_acc.png';
-import aubrey from '../public/assets/Aubrey_acc.webp';
-import penelope from '../public/assets/Penelope_acc.png';
-import riley from '../public/assets/Riley_acc.png';
-import lindsey from '../public/assets/Lindsey_acc.png';
+
+
+
+import nora from '../public/assets/Nora_website_315x315.webp';
+import chloe from '../public/assets/Chloe_website_315x315.webp';
+import lauren from '../public/assets/Lauren_website_315x315.webp';
+import aubrey from '../public/assets/Aubrey_website_315x315.webp';
+import penelope from '../public/assets/Penelope_website_315x315.webp';
+import riley from '../public/assets/Riley_website_315x315.webp';
+import lindsey from '../public/assets/Lindsey_website_315x315.webp';
 
 const names = [
   {

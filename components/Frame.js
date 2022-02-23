@@ -2,9 +2,9 @@ import React from 'react';
 import Button from './Button';
 import Image from 'next/image';
 
-import first from '../public/assets/frame-1.png';
-import second from '../public/assets/frame-2.png';
-import third from '../public/assets/frame-3.png';
+import first from '../public/assets/frame-1.webp';
+import second from '../public/assets/frame-2.webp';
+import third from '../public/assets/frame-3.webp';
 
 const frames = [
   {

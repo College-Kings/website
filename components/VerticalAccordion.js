@@ -1,20 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import nora from '../public/assets/Nora_acc.png';
-import chloe from '../public/assets/Chloe_acc.webp';
-import lauren from '../public/assets/Lauren_acc.png';
-import aubrey from '../public/assets/Aubrey_acc.webp';
-import penelope from '../public/assets/Penelope_acc.png';
-import riley from '../public/assets/Riley_acc.png';
-import lindsey from '../public/assets/Lindsey_acc.png';
-import chloeSmall from '../public/assets/Chloe_website_small.png';
-import laurenSmall from '../public/assets/Lauren_website_small.png';
-import noraSmall from '../public/assets/Nora_website_small.png';
-import rileySmall from '../public/assets/Riley_website_small.png';
-import aubreySmall from '../public/assets/Aubrey_website_small.png';
-import lindseySmall from '../public/assets/Lindsey_small.png';
-import penelopeSmall from '../public/assets/Penelope_website_small.png';
+
+
+
+
+import chloe from '../public/assets/Chloe_500x991.webp';
+import lauren from '../public/assets/Lauren_500x991.webp';
+import nora from '../public/assets/Nora_500x991.webp';
+import riley from '../public/assets/Riley_500x991.webp';
+import aubrey from '../public/assets/Aubrey_500x991.webp';
+import lindsey from '../public/assets/Lindsey_500x991.webp';
+import penelope from '../public/assets/Penelope_500x991.webp';
+
+
+import noraSmall from '../public/assets/Nora_website_315x315.webp';
+import chloeSmall from '../public/assets/Chloe_website_315x315.webp';
+import laurenSmall from '../public/assets/Lauren_website_315x315.webp';
+import aubreySmall from '../public/assets/Aubrey_website_315x315.webp';
+import penelopeSmall from '../public/assets/Penelope_website_315x315.webp';
+import rileySmall from '../public/assets/Riley_website_315x315.webp';
+import lindseySmall from '../public/assets/Lindsey_website_315x315.webp';
+
+
+
+
+
+
 const AccordionButton = dynamic(() => import('./AccordionButton'));
 // import AccordionButton from './AccordionButton';
 import { AccMemoized } from './AccordionItemBig';

@@ -9,7 +9,7 @@ const LauncherButton = dynamic(() => import('../LauncherButton'));
 import kingsBig from '../../public/assets/kings-big.png';
 import penelope from '../../public/assets/penelope.png'
 import goldCrown from '../../public/assets/gold-crown.png'
-import penelopeBig from '../../public/assets/penelope-sit-big.png';
+import penelopeBig from '../../public/assets/penelope-sit-big.webp';
 import kingsFrame from '../../public/assets/kings-frame.png';
 import kingsShade from '../../public/assets/kings-shade.webp';
 
