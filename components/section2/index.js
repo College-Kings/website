@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
@@ -50,7 +51,7 @@ const Section2 = () => {
         />
       </div>
       <div className="m:hidden pl-7.25">
-        <Image src={chloeSit} className={styles.zIndex} alt="chloe-sit" />
+        <img src='/assets/chloe-sit-under.webp' className={styles.zIndex} alt="chloe-sit" />
       </div>
 
       <div className="hidden w-full bg-black-secondary m:flex my-10 md:justify-center md:align-middle  items-center bg-transparent  m:h-84.987 lg:h-103 5xl:h-154.25  ">
@@ -75,7 +76,7 @@ const Section2 = () => {
           </div>
 
           <div className="hidden  w-6/12 xl:flex justify-end align-middle md:-ml-1 xl:-ml-10 5xl:-ml-66 scale-110">
-            <Image src={bigChloe} alt="chloe" className={styles.zIndex} />
+            <img src='/assets/big-chloe.webp' alt="chloe" className={styles.zIndex} />
           </div>
         </div>
       </div>

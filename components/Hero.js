@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Image from 'next/image';
 import banner from '../public/assets/banner.webp';
-import fullbaner from '../public/assets/fullbanner.webp';
 
 const Hero = () => {
   return (
@@ -16,12 +16,12 @@ const Hero = () => {
         />
       </div>
       <div className="hidden md:flex w-full md:h-[40rem] m:h-[60rem]  5xl:h-[80rem] justify-center  relative bg-black-secondary">
-        <Image
-          priority={true}
+        <img
+          // priority={true}
           alt="desktop"
-          src={fullbaner}
-          layout="fill"
-          objectFit="cover"
+          src="/assets/fullbanner.webp"
+          // layout="fill"
+          // objectFit="cover"
         />
       </div>
     </>

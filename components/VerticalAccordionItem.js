@@ -42,7 +42,7 @@ const VerticalAccordionItem = ({
               effect && 'animate-fadeIn'
             } w-full h-full border-solid border-black rounded-lg rounded-tl-3xl rounded-br-3xl flex `}
           >
-            <div className=" flex flex-col ">
+            <div className="flex flex-col ">
               <span className="text-white font-bold">{name}</span>
               <span className="text-orange-main font-bold">{title}</span>
               <span className="text-white text-sm">{text}</span>

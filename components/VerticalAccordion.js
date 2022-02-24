@@ -3,8 +3,6 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
 
-
-
 import chloe from '../public/assets/Chloe_500x991.webp';
 import lauren from '../public/assets/Lauren_500x991.webp';
 import nora from '../public/assets/Nora_500x991.webp';
@@ -12,6 +10,8 @@ import riley from '../public/assets/Riley_500x991.webp';
 import aubrey from '../public/assets/Aubrey_500x991.webp';
 import lindsey from '../public/assets/Lindsey_500x991.webp';
 import penelope from '../public/assets/Penelope_500x991.webp';
+
+
 
 
 import noraSmall from '../public/assets/Nora_website_315x315.webp';
@@ -125,9 +125,8 @@ const VerticalAccordion = () => {
   return (
     <div className="h-full flex align-top items-center w-full 5xl:h-154.25 5xl:mr-5 z-10">
       <div
-        className={`${
-          effectImg && 'm:animate-fadeIn'
-        }   m:relative m:-top-8 lg:-top-32 xl-top-32 2xl:-top-44 5xl:-top-40 w-full h-full z-0`}
+        className={`${effectImg && 'm:animate-fadeIn'
+          }   m:relative m:-top-8 lg:-top-32 xl-top-32 2xl:-top-44 5xl:-top-40 w-full h-full z-0`}
         onAnimationEnd={() => setEffectImg(false)}
       >
         <div className="z-0">
