@@ -50,8 +50,10 @@ const Section2 = () => {
           className={`${styles.youtube} w-83 h-44.25 frame-background`}
         />
       </div>
-      <div className="m:hidden pl-7.25">
-        <img src='/assets/chloe-sit-under.webp' className={styles.zIndex} alt="chloe-sit" />
+      <div className="m:hidden pl-7.25 w-full  ">
+
+    
+        <Image src={chloeSit} loading='eager' width={375} height={281} unoptimized={true} className={styles.zIndex} alt="chloe-sit" />
       </div>
 
       <div className="hidden w-full bg-black-secondary m:flex my-10 md:justify-center md:align-middle  items-center bg-transparent  m:h-84.987 lg:h-103 5xl:h-154.25  ">
@@ -71,12 +73,12 @@ const Section2 = () => {
             />
           </div>
 
-          <div className="w-5/12 flex justify-start align-middle md:-ml-1 xl:-ml-20 scale-150 xl:hidden z-2000">
+          <div className="w-5/12 h-[281px] flex justify-start align-middle md:-ml-1 xl:-ml-20 scale-150 xl:hidden z-2000">
             <Image src={chloeSit} alt="chloe sit" />
           </div>
 
-          <div className="hidden  w-6/12 xl:flex justify-end align-middle md:-ml-1 xl:-ml-10 5xl:-ml-66 scale-110">
-            <img src='../assets/big-chloe.webp' alt="chloe" className={styles.zIndex} />
+          <div className="hidden  w-6/12   xl:flex justify-end align-middle md:-ml-1 xl:-ml-10 5xl:-ml-66 scale-110">
+            <Image src={bigChloe} width={884} height={745} unoptimized={true} loading='lazy' alt="chloe" className={styles.zIndex} />
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const Section7 = () => {
           <div className="relative w-49.803 h-64.688 ">
             <Image
               src={penelope}
-              width={199.21}
+              width={184}
               height={258.75}
               alt="penelope"
             />

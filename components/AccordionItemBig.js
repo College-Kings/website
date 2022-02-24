@@ -57,9 +57,14 @@ const AccordionItemBig = ({
                 </span>
               </div>
             </div>
-            <div className="w-1/2 h-full relative rounded-br-3xl rounded-tl-3xl ">
+            <div className="w-1/2 h-full relative rounded-br-3xl rounded-tl-3xl overflow-y-hidden">
               <Image
-                layout="fill"
+                // layout="fill"
+                loading='lazy'
+                unoptimized={true}
+                placeholder='blur'
+                width={315}
+                height={315}
                 alt="small"
                 src={small}
                 className="object-fit m:pb-1/3 lg:pt-2/3 2xl:pb-1/3  rounded-br-3xl rounded-tr-md"

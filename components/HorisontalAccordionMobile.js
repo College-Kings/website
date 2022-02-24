@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './index.module.css';
 import { MemoizedVertical } from './VerticalAccordionItem';
 import AccordionButton from './AccordionButton';
+import Image from 'next/image'
 
 
 import chloe from '../public/assets/Chloe_500x991.webp';
@@ -27,49 +28,49 @@ const names = [
   {
     name: 'Nora',
     text: 'Nora wants to travel the world and experience new things, but currently she’s stuck with her boyfriend, who leads the Wolves fraternity.',
-    img: '/assets/Nora_500x991.webp',
+    img: nora,
     id: 0,
-    title:'The Dreamer'
+    title: 'The Dreamer'
   },
   {
     name: 'Chloe',
     text: 'The most popular girl in San Vallejo is always up for some fun. Leading the biggest sorority with a great passion, she is the number one. ',
-    img: '/assets/Chloe_500x991.webp',
+    img: chloe,
     id: 1,
     title: "The 'It Girl",
   },
   {
     name: 'Lauren',
     text: 'She’s the most vanilla girl you’ll find and will always love you for who you are. Just don’t try to betray her, as you will definitely regret it. ',
-    img: '/assets/Lauren_500x991.webp',
+    img: lauren,
     id: 2,
     title: 'The Innocent',
   },
   {
     name: 'Aubrey',
     text: 'She is the most open girl in San Vallejo, making always sure everyone has fun. Living in the moment, Aubrey is the first to undress you and tie you up.',
-    img: '/assets/Aubrey_500x991.webp',
+    img: aubrey,
     id: 3,
     title: ' The Open',
   },
   {
     name: 'Penelope',
     text: 'She has very little friends, but cares even more for them. Even though Penelope is a little introverted and cautious, she is always four steps ahead of everyone else. ',
-    img: '/assets/Penelope_500x991.webp',
+    img: penelope,
     id: 4,
     title: 'The Lone Wolf ',
   },
   {
     name: 'Riley',
     text: 'Bored in your dorm? Don’t worry. Riley is here to explore the world with you. If you ever feel down, she is the one to cheer you up. ',
-    img: '/assets/Riley_500x991.webp',
+    img: riley,
     id: 5,
     title: 'The Passionate',
   },
   {
     name: 'Lindsey',
     text: 'Friends with the hottest girls in college, Lindsey is a nice girl with a naughty side. You need to treat her right if you want to be her College King.',
-    img: '/assets/Lindsey_500x991.webp',
+    img: lindsey,
     id: 6,
     title: 'The Popular',
   },
@@ -110,14 +111,15 @@ const HorisontalAccordionMobile = () => {
     <div className="w-full h-full flex justify-end items-end m:hidden">
       <div className="relative w-full h-full">
         <div
-          className={`${
-            effectImg && 'animate-fadeIn'
-          }  absolute inset-y-0 -left-6  sm:-top-14`}
+          className={`${effectImg && 'animate-fadeIn'
+            }  absolute inset-y-0 -left-6  sm:-top-14`}
           onAnimationEnd={() => setEffectImg(false)}
         >
-          <img
-            // width={230}
-            // height={500}
+          <Image
+            width={250}
+            height={500}
+            loading='eager'
+            // layout='fill'
             src={names[activeId].img}
             alt="active"
           />

@@ -11,7 +11,7 @@ const frames = [
   {
     width: 208.15,
     height: 39.81,
-    img: '../assets/frame-1.webp',
+    img: first,
     alt: 'girl-first',
     title: 'discord',
     text: 'active community',
@@ -21,7 +21,7 @@ const frames = [
   {
     width: 208.15,
     height: 39.81,
-    img: '../assets/frame-2.webp',
+    img: second,
     alt: 'girl-second',
     title: 'merch',
     text: 'awesome products',
@@ -31,7 +31,7 @@ const frames = [
   {
     width: 208.15,
     height: 39.81,
-    img: '../assets/frame-3.webp',
+    img: third,
     alt: 'girl-third',
     title: 'merch',
     title: 'patreon hub',
@@ -52,9 +52,14 @@ export default function Frame() {
 h-[414px] 5xl:w-[508px] 5xl:h-[634px] frame-background m-2"
           >
             <div className="card-img-wrapper">
-              <img
+              <Image
                 // layout="fill"
+                width={509}
+                height={635}
+                unoptimized={true}
+                loading='lazy'
                 src={frame.img}
+                placeholder='blur'
                 className="object-fit h-full w-full rounded-lg rounded-tl-3xl rounded-br-3xl z-0"
                 alt={frame.alt}
               />

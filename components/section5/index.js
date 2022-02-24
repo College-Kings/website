@@ -30,13 +30,15 @@ const Section5 = () => {
             <Image
               layout="fixed"
               src={penelope}
+              width={572} height={804}
               className="object-contain bg-transparent z-0"
               alt="penelope"
             />
           </div>
         </div>
         <div className="hidden relative w-3/12 xl:-ml-20 xl:mr-5  xl:flex ">
-          <Image src={penelopeBig} alt="penelope" className="object-fill " />
+          <Image src={penelopeBig} width={572} height={804} loading='lazy' alt="penelope"  />
+          {/* className="object-fill " */}
         </div>
       </div>
       <div className="w-11/12  xl:mb-60 5xl:-mt-94.75 5xl:mb-94.75 mx-5  xl:mx-16  xl:-mt-30 2xl:ml-24 5xl:ml-32 ">
