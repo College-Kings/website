@@ -76,7 +76,7 @@ const Section2 = () => {
           </div>
 
           <div className="hidden  w-6/12 xl:flex justify-end align-middle md:-ml-1 xl:-ml-10 5xl:-ml-66 scale-110">
-            <img src='/assets/big-chloe.webp' alt="chloe" className={styles.zIndex} />
+            <img src='../assets/big-chloe.webp' alt="chloe" className={styles.zIndex} />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import banner from '../public/assets/banner.webp';
 const Hero = () => {
   return (
     <>
-      <div className="md:hidden bg-black-secondary">
+      <div className="md:hidden  bg-black-secondary">
         <Image
           src={banner}
           priority={true}
@@ -15,13 +15,13 @@ const Hero = () => {
           className="w-full background-repeat: no-repeat"
         />
       </div>
-      <div className="hidden md:flex w-full md:h-[40rem] m:h-[60rem]  5xl:h-[80rem] justify-center  relative bg-black-secondary">
+      <div className="hidden md:flex w-auto h-full justify-center relative bg-black-secondary">
         <img
-          // priority={true}
           alt="desktop"
-          src="/assets/fullbanner.webp"
-          // layout="fill"
-          // objectFit="cover"
+          src="../assets/fullbanner.webp"
+          className='w-auto h-full'
+        // layout="fill"
+        // objectFit="cover"
         />
       </div>
     </>

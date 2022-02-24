@@ -1,13 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Button from './Button';
+import Image from 'next/image';
 
+import first from '../public/assets/frame-1.webp';
+import second from '../public/assets/frame-2.webp';
+import third from '../public/assets/frame-3.webp';
 
 const frames = [
   {
     width: 208.15,
     height: 39.81,
-    img: '/assets/frame-1.webp',
+    img: '../assets/frame-1.webp',
     alt: 'girl-first',
     title: 'discord',
     text: 'active community',
@@ -17,7 +21,7 @@ const frames = [
   {
     width: 208.15,
     height: 39.81,
-    img: '/assets/frame-2.webp',
+    img: '../assets/frame-2.webp',
     alt: 'girl-second',
     title: 'merch',
     text: 'awesome products',
@@ -27,7 +31,7 @@ const frames = [
   {
     width: 208.15,
     height: 39.81,
-    img: '/assets/frame-3.webp',
+    img: '../assets/frame-3.webp',
     alt: 'girl-third',
     title: 'merch',
     title: 'patreon hub',
