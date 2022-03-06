@@ -90,7 +90,7 @@ export default function Footer() {
         <span className="text-gray-500 cursor-pointer">
           info@crimsonsky.games
         </span>
-        <span className="text-gray-50 cursor-pointer">
+        <span className="text-gray-500 cursor-pointer">
           Company number: 13061268
         </span>
         <span className="text-gray-500 cursor-pointer">
