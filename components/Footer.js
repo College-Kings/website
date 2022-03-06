@@ -84,22 +84,22 @@ export default function Footer() {
       </div>
       <div className="w-[220px] flex flex-col h-auto my-4">
         <span className="text-white text-xl font-bold pb-2">Company Info</span>
-        <span className="text-gray-500 hover:text-white cursor-pointer">
+        <span className="text-gray-500 cursor-pointer">
           CRIMSONSKY LTD
         </span>
-        <span className="text-gray-500 hover:text-white cursor-pointer">
+        <span className="text-gray-500 cursor-pointer">
           info@crimsonsky.games
         </span>
-        <span className="text-gray-500 hover:text-white cursor-pointer">
+        <span className="text-gray-50 cursor-pointer">
           Company number: 13061268
         </span>
-        <span className="text-gray-500 hover:text-white cursor-pointer">
+        <span className="text-gray-500 cursor-pointer">
           71-75 Shelton Street
         </span>
-        <span className="text-gray-500 hover:text-white cursor-pointer">
+        <span className="text-gray-500 cursor-pointer">
           Covent Garden, London
         </span>
-        <span className="text-gray-500 hover:text-white cursor-pointer">
+        <span className="text-gray-500 cursor-pointer">
           United Kingdom, WC2H 9JQ
         </span>
       </div>
