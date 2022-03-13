@@ -1,39 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Image from 'next/image';
-import banner from '../public/assets/banner.webp';
+// import banner from '../public/assets/banner.webp';
 import fullbaner from '../public/assets/fullbanner.webp'
+import gif from '../public/assets/crown.gif'
 
 const Hero = () => {
   return (
-    <>
-      <div className="md:hidden bg-black-secondary">
-        <Image
-          src={banner}
-          priority={true}
-          layout="responsive"
-          alt="mobile"
-          className="w-full background-repeat: no-repeat"
-        />
-      </div>
-      <div className="hidden md:flex w-full h-auto justify-center  relative bg-black-secondary">
-      {/* md:h-[40rem] m:h-[60rem]  5xl:h-[80rem] */}
-        <Image
-          loading='eager'
-          unoptimized={true}
-          alt="desktop"
-          src={fullbaner}
-          // className='w-auto h-full'
-          // layout="fill"
-          // layout='responsive'
-          placeholder='blur'
-          width={1920}
-          height={1078}
 
-        // objectFit="cover"
-        />
-      </div>
-    </>
+    <div className='pt-10 m:pt-0'>
+      <Image
+        loading='eager'
+        alt="desktop"
+        src={fullbaner}
+        quality={100}
+        placeholder={gif}
+        width={1920}
+        height={1078}
+        layout='responsive'
+        
+      />
+    </div>
   );
 };
 

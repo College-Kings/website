@@ -5,7 +5,7 @@ import second from '../public/assets/university-2.png';
 import third from '../public/assets/university-3.webp';
 export default function ScrollSnap() {
   return (
-    <ul className="snap-x w-full flex flex-row gap-8 5xl:ml-52 5xl:scale-125 overflow-y-hidden overflow-x-auto">
+    <ul className="snap-x w-full flex flex-row gap-8 5xl:ml-52 5xl:scale-125 overflow-y-hidden overflow-x-auto z-0">
       <li className="snap-center 2xl:pl-7.25 2xl:pb-10">
         <div className="frame-background  w-[345px] h-[199px] 2xl:w-[461px] 2xl:h-[263px]">
           <div className="relative  w-full h-full bg-black-main rounded-lg rounded-tl-3xl rounded-br-3xl">

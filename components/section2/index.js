@@ -7,14 +7,14 @@ import dynamic from 'next/dynamic';
 const BigCrown = dynamic(() => import('../../public/assets/big-crown.svg'));
 const YouTube = dynamic(() => import('react-youtube'));
 import bigChloe from '../../public/assets/big-chloe.webp';
-import chloeSit from '../../public/assets/chloe-sit-under.webp';
+import chloeSitSmall from '../../public/assets/chloe-sit-under-small.webp';
 import college from '../../public/assets/college-text.png';
 import styles from '../index.module.css';
 
 const Section2 = () => {
   return (
     <>
-      <div className="relative w-full bg-black-secondary  h-77.51 pl-7.25 md:pl-14.14  mb-9.918  sm:h-auto  overflow-hidden md:flex 2xl:pl-40.5">
+      <div className="relative w-full bg-black-secondary  h-77.51 pl-7.25 md:pl-14.14  mb-9.918  sm:h-auto  overflow-hidden md:flex 2xl:pl-40.5 z-0">
         <div className=" md:flex md:flex-col md:w-1/3 ">
           <p className="hidden m:flex relative pr-7.25 z-10 text-white text-title font-bebas">
             What is College Kings?
@@ -50,18 +50,17 @@ const Section2 = () => {
           className={`${styles.youtube} w-83 h-44.25 frame-background`}
         />
       </div>
-      <div className="m:hidden pl-7.25 w-full  ">
-
-    
-        <Image src={chloeSit} loading='eager' width={375} height={281} unoptimized={true} className={styles.zIndex} alt="chloe-sit" />
+      <div className="m:hidden pl-7.25 w-full z-40 ">
+        <Image src={chloeSitSmall} width={375} height={281} layout='fixed' quality={100} className="z-40" alt="chloe-sit" />
       </div>
+
+
 
       <div className="hidden w-full bg-black-secondary m:flex my-10 md:justify-center md:align-middle  items-center bg-transparent  m:h-84.987 lg:h-103 5xl:h-154.25  ">
         <div className="relative flex flex-row justify-center align-middle items-center w-full m:h-84.987 lg:h-103 5xl:h-154.25">
           <Image
             layout="fill"
             src={college}
-            className="h-84.987"
             alt="college"
             placeholder="blur"
           />
@@ -73,12 +72,16 @@ const Section2 = () => {
             />
           </div>
 
-          <div className="w-5/12 h-[281px] flex justify-start align-middle md:-ml-1 xl:-ml-20 scale-150 xl:hidden z-2000">
-            <Image src={chloeSit} alt="chloe sit" />
+          <div className="w-5/12 h-[281px] flex justify-start align-middle md:-ml-1 xl:-ml-20 xl:hidden z-0">
+            <div style={{ width: "100%" }}>
+              <Image src={chloeSitSmall} width={375} height={281} layout='responsive' quality={100} className={styles.zIndex} alt="chloe-sit" />
+            </div>
           </div>
-
           <div className="hidden  w-6/12   xl:flex justify-end align-middle md:-ml-1 xl:-ml-10 5xl:-ml-66 scale-110">
-            <Image src={bigChloe} width={884} height={745} unoptimized={true} loading='lazy' alt="chloe" className={styles.zIndex} />
+            <div style={{ width: "100%" }}>
+
+              <Image src={bigChloe} width={884} layout='responsive' quality={100} height={745} loading='lazy' alt="chloe" className={styles.zIndex} />
+            </div>
           </div>
         </div>
       </div>

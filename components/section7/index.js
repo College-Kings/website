@@ -19,12 +19,17 @@ const Section7 = () => {
         </div>
         <div className="w-full flex justify-end">
           <div className="relative w-49.803 h-64.688 ">
+          <div style={{width:'100%'}}>
+
             <Image
               src={penelope}
               width={184}
-              height={258.75}
+              height={260}
               alt="penelope"
+              layout='responsive'
+              quality={100}
             />
+          </div>
           </div>
         </div>
       </section>

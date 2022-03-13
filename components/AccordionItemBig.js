@@ -29,9 +29,8 @@ const AccordionItemBig = ({
   return (
     <div className="h-2/3 justify-center items-center align-bottom">
       <div
-        className={`${
-          index === activeGirl ? styles.expanded : styles.accordion
-        }  border-solid border-black rounded-lg rounded-tl-3xl rounded-br-3xl m:my-3 bg-black-main bg-opacity-25`}
+        className={`${index === activeGirl ? styles.expanded : styles.accordion
+          }  border-solid border-black rounded-lg rounded-tl-3xl rounded-br-3xl m:my-3 bg-black-main bg-opacity-25`}
         onClick={() => {
           handeActiveGirl(index, imageId);
         }}
@@ -39,9 +38,8 @@ const AccordionItemBig = ({
       >
         {index === activeGirl ? (
           <div
-            className={`${
-              effect && 'animate-fadeIn'
-            } w-full h-full border-solid border-black rounded-lg rounded-tl-3xl rounded-br-3xl flex `}
+            className={`${effect && 'animate-fadeIn'
+              } w-full h-full border-solid border-black rounded-lg rounded-tl-3xl rounded-br-3xl flex `}
           >
             <div className=" w-1/2 h-full rounded-br-3xl m:flex flex-col justify-start m:pl-1 pl-11.715 xl:pl-8">
               <span className="text-white xl:text-frameTitle 5xl:pt-10.27 5xl:pb-6.655 m:pt-2 m:pb-2 m:text-xl ">
@@ -49,7 +47,7 @@ const AccordionItemBig = ({
               </span>
 
               <span className="text-orange-main xl:text-cardSubtitle font-bold 5xl:pb-5 m:pb-1 m:text-xl">
-              {title}
+                {title}
               </span>
               <div className="max-w-[205px]">
                 <span className="font-montserrat m:text-sm xl:text text-white">
@@ -59,15 +57,15 @@ const AccordionItemBig = ({
             </div>
             <div className="w-1/2 h-full relative rounded-br-3xl rounded-tl-3xl overflow-y-hidden">
               <Image
-                // layout="fill"
+                layout="fill"
                 loading='lazy'
-                unoptimized={true}
+                quality={100}
                 placeholder='blur'
-                width={315}
-                height={315}
+                // width={315}
+                // height={315}
                 alt="small"
                 src={small}
-                className="object-fit m:pb-1/3 lg:pt-2/3 2xl:pb-1/3  rounded-br-3xl rounded-tr-md"
+                className="rounded-br-3xl rounded-tr-md"
               />
             </div>
           </div>

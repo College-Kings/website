@@ -14,7 +14,7 @@ export default function Navbar() {
   const [showSupport, setShowSupport] = useState(false);
 
   return (
-    <div className="w-full h-20 lg:h-25 ">
+    <div className="w-full h-20 lg:h-25 z-50">
       <div className=" w-full absolute inset-x-0 top-0">
         <div className={`${styles.navShape} bg-black-secondary opacity-60`}>
           <Image

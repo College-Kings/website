@@ -108,15 +108,38 @@ const VerticalAccordion = () => {
   }, []);
 
   const handleChange = (index) => {
-    if (index === names.length - 2) {
-      const resetNames = names.slice(0, 3);
-      setActiveNames(resetNames);
-      setActiveId(0);
-      setActiveGirlIndexNames(0);
-      return;
-    }
-    const newNames = names.slice(activeGirlIndexNames + 1, index + 3);
 
+    if (index >= 5) {
+
+      const lastNames = names.slice(-3);
+      setActiveNames(lastNames);
+
+      if (index === 5) {
+
+        setActiveGirl(1)
+
+        setActiveId(lastNames[1].id);
+      } else if (index === 6) {
+        setActiveGirl(2)
+        setActiveId(lastNames[2].id);
+
+      } else {
+
+        const resetNames = names.slice(0, 3);
+        setActiveNames(resetNames);
+        setActiveId(0);
+        setActiveGirlIndexNames(0);
+        return
+      }
+
+
+      setActiveGirlIndexNames((prevIndex) => prevIndex + 1);
+
+      return
+    }
+
+
+    const newNames = names.slice(activeGirlIndexNames + 1, index + 3);
     setActiveId(newNames[0].id);
     setActiveNames(newNames);
     setActiveGirlIndexNames((prevIndex) => prevIndex + 1);
@@ -130,7 +153,7 @@ const VerticalAccordion = () => {
         onAnimationEnd={() => setEffectImg(false)}
       >
         <div className="z-0">
-          <Image src={names[activeId].img} className="z-0" alt="active" />
+          <Image src={names[activeId].img} width={500} height={900} quality={100} layout='fixed' className="z-0" alt="active" />
         </div>
       </div>
       <div>

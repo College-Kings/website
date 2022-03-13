@@ -11,7 +11,7 @@ export default function Footer() {
   const [showModal, setShowModal] = useState(false);
   const [showSupport, setShowSupport] = useState(false);
   return (
-    <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center sm:justify-around align-middle sm:align-top items-center sm:items-start w-full bg-black-main px-14.14 lg:px-30 pt-11.715 pb-20.37">
+    <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center sm:justify-around align-middle sm:align-top items-center sm:items-start w-full bg-black-main px-14.14 lg:px-30 pt-11.715 pb-40">
       <div className="w-[220px] flex flex-col align-top h-auto my-4">
         <Image src={coledgeKings} alt="kings" />
         <p className="text-white text-footer my-3 ">© College Kings 2021.</p>

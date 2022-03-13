@@ -89,6 +89,7 @@ module.exports = {
         325: '81.25rem', //1300
       },
       inset: {
+        3: '0.75rem',
         24: '6rem', //96
         7.793: '1.948rem', //31.17
         16: '4rem', //64
@@ -263,6 +264,12 @@ module.exports = {
       },
 
       fontSize: {
+        supportParag: [
+          '14px',
+          {
+            lineHeight: '25px',
+          },
+        ],
         paragraph: [
           '15px',
           {
@@ -391,6 +398,13 @@ module.exports = {
           {
             letterSpacing: '2px',
             lineHeight: '50px',
+          },
+        ],
+        support: [
+          '50px',
+          {
+            letterSpacing: '2px',
+            lineHeight: '60px',
           },
         ],
       },
