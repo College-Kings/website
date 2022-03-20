@@ -6,23 +6,23 @@ import AccordionButton from './AccordionButton';
 import Image from 'next/image'
 
 
-import chloe from '../public/assets/Chloe_500x991.webp';
-import lauren from '../public/assets/Lauren_500x991.webp';
-import nora from '../public/assets/Nora_500x991.webp';
-import riley from '../public/assets/Riley_500x991.webp';
-import aubrey from '../public/assets/Aubrey_500x991.webp';
-import lindsey from '../public/assets/Lindsey_500x991.webp';
-import penelope from '../public/assets/Penelope_500x991.webp';
+// import chloe from '../public/assets/Chloe_500x991.webp';
+// import lauren from '../public/assets/Lauren_500x991.webp';
+// import nora from '../public/assets/Nora_500x991.webp';
+// import riley from '../public/assets/Riley_500x991.webp';
+// import aubrey from '../public/assets/Aubrey_500x991.webp';
+// import lindsey from '../public/assets/Lindsey_500x991.webp';
+// import penelope from '../public/assets/Penelope_500x991.webp';
 
 
 
-// import nora from '../public/assets/Nora_acc.png';
-// import chloe from '../public/assets/Chloe_acc.webp';
-// import lauren from '../public/assets/Lauren_acc.png';
-// import aubrey from '../public/assets/Aubrey_acc.webp';
-// import penelope from '../public/assets/Penelope_acc.png';
-// import riley from '../public/assets/Riley_acc.png';
-// import lindsey from '../public/assets/Lindsey_acc.png';
+import nora from '../public/assets/Nora_acc.png';
+import chloe from '../public/assets/Chloe_acc.webp';
+import lauren from '../public/assets/Lauren_acc.png';
+import aubrey from '../public/assets/Aubrey_acc.webp';
+import penelope from '../public/assets/Penelope_acc.png';
+import riley from '../public/assets/Riley_acc.png';
+import lindsey from '../public/assets/Lindsey_acc.png';
 
 const names = [
   {
@@ -108,21 +108,24 @@ const HorisontalAccordionMobile = () => {
   };
 
   return (
-    <div className="w-full h-full flex justify-end items-end m:hidden">
-      <div className="relative w-full h-full">
+    <div className="w-full h-full flex justify-end items-end m:hidden z-0">
+      <div className="relative w-full h-full z-0">
         <div
           className={`${effectImg && 'animate-fadeIn'
-            }  absolute inset-y-0 -left-6  sm:-top-14`}
+            }  absolute top-3 -left-6  sm:-top-14`}
+          style={{ width: '100%' }}
           onAnimationEnd={() => setEffectImg(false)}
         >
-          <Image
-            width={250}
-            height={500}
-            loading='eager'
-            // layout='fill'
-            src={names[activeId].img}
-            alt="active"
-          />
+          <div style={{ width: '100%' }}>
+            <Image
+              width={250}
+              height={500}
+              quality={100}
+              layout='responsive'
+              src={names[activeId].img}
+              alt="active"
+            />
+          </div>
         </div>
       </div>
       <div className="w-2/3 h-full flex flex-col justify-center items-center py-6 pr-2">

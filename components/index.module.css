@@ -10,7 +10,7 @@
 }
 
 .box:before {
-  content: '';
+  content: "";
   clip-path: polygon(100% 0, 100% 40%, 87% 100%, 0 100%, 0 60%, 15% 0);
   position: absolute;
   top: 0;
@@ -31,7 +31,7 @@
 .btn {
   clip-path: polygon(100% 0, 100% 40%, 87% 100%, 0 100%, 0 60%, 15% 0);
   cursor: pointer;
-  z-index: 1111;
+  /* z-index: 1111; */
 }
 
 .modal {
@@ -61,11 +61,10 @@
   width: 81.62px;
   height: 375px;
   margin-right: 20px;
-  border: 1px solid #EF8A01;
+  border: 1px solid #ef8a01;
   z-index: 11111;
   cursor: pointer;
 }
-
 
 @media screen and (min-width: 925px) {
   .accordion {
@@ -80,7 +79,7 @@
     width: 60px;
     height: 250px;
     margin-right: 10px;
-    border: 1px solid #EF8A01;
+    border: 1px solid #ef8a01;
   }
 }
 
@@ -89,8 +88,7 @@
     width: 81.62px;
     height: 270px;
     margin-right: 20px;
-    border: 1px solid #EF8A01;
-
+    border: 1px solid #ef8a01;
   }
 }
 
@@ -99,8 +97,7 @@
     width: 81.62px;
     height: 375px;
     margin-right: 20px;
-    border: 1px solid #EF8A01;
-
+    border: 1px solid #ef8a01;
   }
 }
 
@@ -112,13 +109,12 @@
   height: 1300px;
 }
 
-
 .expanded {
   width: 621px;
   height: 375px;
-  background: 'transparent';
+  background: "transparent";
   margin-right: 20px;
-  border: 1px solid #EF8A01;
+  border: 1px solid #ef8a01;
   z-index: 11111;
   cursor: pointer;
 }
@@ -136,7 +132,7 @@
     width: 425px;
     height: 250px;
     margin-right: 10px;
-    border: 1px solid #EF8A01;
+    border: 1px solid #ef8a01;
   }
 }
 
@@ -144,11 +140,10 @@
   .expanded {
     width: 550px;
     height: 270px;
-    background: 'transparent';
+    background: "transparent";
     margin-right: 20px;
-    border: 1px solid #EF8A01;
+    border: 1px solid #ef8a01;
     cursor: pointer;
-
   }
 }
 
@@ -156,34 +151,30 @@
   .expanded {
     width: 621px;
     height: 375px;
-    background: 'transparent';
+    background: "transparent";
     margin-right: 20px;
-    border: 1px solid #EF8A01;
+    border: 1px solid #ef8a01;
     cursor: pointer;
   }
 }
-
-
 
 /*MobileAccordion*/
 .accordionMobile {
   height: 34.25px;
   width: 225.57px;
   margin-bottom: 10px;
-  border: 1px solid #EF8A01;
-  padding: 5px
+  border: 1px solid #ef8a01;
+  padding: 5px;
 }
 
 .mobileExpanded {
   height: 181.52px;
   width: 225.57px;
-  background: 'transparent';
+  background: "transparent";
   margin-bottom: 10px;
-  border: 1px solid #EF8A01;
-  padding: 8px
+  border: 1px solid #ef8a01;
+  padding: 8px;
 }
-
-
 
 .zIndex {
   z-index: 1111;
@@ -193,13 +184,12 @@
   transition: width 350ms ease-out 0s;
 }
 
-
 .wrapper {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid #EF8A01;
+  border: 1px solid #ef8a01;
 }
 
 .youtube .ytp-title-text {
@@ -207,9 +197,8 @@
 }
 
 .active-os {
-  border: '1px solid #fff'
+  border: "1px solid #fff";
 }
-
 
 /* .navShape {
   clip-path: polygon(0 0, 100% 0, 92% 99%, 8% 100%);
@@ -219,16 +208,43 @@
   clip-path: polygon(0 0, 100% 0, 95% 100%, 8% 156%);
   position: relative;
   width: 99vw;
-  height: 90px
+  height: 90px;
 }
-
 
 @media screen and (min-width: 2134px) {
   .navShape {
-    width: 55.5vw
+    width: 55.5vw;
   }
 }
 
 .centerFix {
   margin: 0 auto;
+}
+
+/* .imageContainer {
+  width: 100%;
+}
+
+.imageContainer div {
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+} */
+
+
+.imageContainer {
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+}
+.imageContainer .image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  /* object-fit: cover; */
 }

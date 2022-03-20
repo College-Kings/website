@@ -44,7 +44,6 @@ const LauncherButton = ({ text, icon, width, height }) => {
         width: `${width}px`,
         height: `${height}px`,
         padding: '1px',
-        zIndex: '1111',
       }}
     >
       <div

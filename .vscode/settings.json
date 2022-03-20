@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c2b41352-7d68-4aa5-a7d0-4d08218f198b/resourceGroups/college-kings-rg/providers/Microsoft.Web/sites/ck-website",
+    "appService.deploySubpath": "."
+}

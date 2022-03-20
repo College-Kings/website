@@ -26,19 +26,24 @@ const Section5 = () => {
           />
         </div>
         <div className="w-1/5 xl:hidden h-90 flex align-middle justify-center items-center relative mt-20 z-0">
-          <div className="absolute inset-y-0 right-0 scale-150 z-0">
+          <div className="absolute inset-y-0 right-0 z-0 w-full">
+
             <Image
-              layout="fixed"
+              layout="responsive"
               src={penelope}
+              quality={100}
               width={572} height={804}
               className="object-contain bg-transparent z-0"
               alt="penelope"
             />
+
           </div>
         </div>
         <div className="hidden relative w-3/12 xl:-ml-20 xl:mr-5  xl:flex ">
-          <Image src={penelopeBig} width={572} height={804} loading='lazy' alt="penelope"  />
-          {/* className="object-fill " */}
+          <div style={{ width: '100%' }}>
+            <Image src={penelopeBig} quality={100} layout='responsive' width={572} height={804} loading='lazy' alt="penelope" />
+            {/* className="object-fill " */}
+          </div>
         </div>
       </div>
       <div className="w-11/12  xl:mb-60 5xl:-mt-94.75 5xl:mb-94.75 mx-5  xl:mx-16  xl:-mt-30 2xl:ml-24 5xl:ml-32 ">

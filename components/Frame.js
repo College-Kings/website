@@ -51,18 +51,21 @@ export default function Frame() {
             className="w-[331px] m:w-[273px] m:h-[357px] xl:w-[373px] xl:h-[448px]
 h-[414px] 5xl:w-[508px] 5xl:h-[634px] frame-background m-2"
           >
-            <div className="card-img-wrapper">
-              <Image
-                // layout="fill"
-                width={509}
-                height={635}
-                unoptimized={true}
-                loading='lazy'
-                src={frame.img}
-                placeholder='blur'
-                className="object-fit h-full w-full rounded-lg rounded-tl-3xl rounded-br-3xl z-0"
-                alt={frame.alt}
-              />
+            <div className="card-img-wrapper ">
+              <div style={{ width: '100%'}}>
+                <Image
+                  layout="fill"
+                  // width={509}
+                  // height={635}
+                  // layout='responsive'
+                  quality={100}
+                  loading='lazy'
+                  src={frame.img}
+                  placeholder='blur'
+                  className="overflow-hidden  rounded-lg rounded-tl-3xl rounded-br-3xl z-0"
+                  alt={frame.alt}
+                />
+              </div>
               <span className="card-title">{frame.title}</span>
               <span className="card-txt">{frame.text}</span>
               <div className="card-btn-wrapper">

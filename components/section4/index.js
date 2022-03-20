@@ -46,7 +46,7 @@ const Section4 = () => {
               <VerticalAccordion />
             </div>
 
-            <div className="flex w-full m:hidden h-103 absolute z-50">
+            <div className="flex w-full m:hidden h-103 absolute z-30">
               <HorisontalAccordionMobile />
             </div>
             <div className="hidden m:flex  relative w-full  h-106.985 ">

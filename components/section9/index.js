@@ -33,7 +33,7 @@ const Section9 = () => {
         <BulletBlack className="mr-1" />
         <BulletBlack className="mr-1" />
       </div>
-      <div className="w-full flex justify-center items-center pb-6 bg-black-secondary xl:hidden">
+      <div className="w-full flex justify-center items-center pb-6 bg-black-secondary xl:hidden z-0">
         <div className={styles.btn} onClick={() => setShowModal(!showModal)}>
           <Button
             text={'See All 5 Levels'}
